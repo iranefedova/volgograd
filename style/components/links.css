@@ -1,0 +1,30 @@
+.link a {
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+    align-items: stretch;
+}
+
+.link {
+    background-color: #206db1;
+    flex: 1;
+/*    padding: 40px;*/
+    background-size: cover;
+}
+
+.link:first-child {
+    background-image: url("../../images/budget_calc.png");
+}
+
+.link:last-child {
+    background-image: url("../../images/forum2.png");
+}
+
+.hover-block {
+    padding: 40px;
+    width: 100%;
+}
+
+.hover-block:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

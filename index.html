@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Открытый бюджет Волгоградской области</title>
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link href="/style/main.css" rel="stylesheet" />
+    <link href="/style/media.css" rel="stylesheet"/>
+    <link href="/style/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css">
+
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>-->
+
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="box-content">
+            <input type="checkbox" checked="checked" id="hmt" class="hidden-menu-ticker">
+            <label class="btn-menu" for="hmt">
+              <span class="first"></span>
+              <span class="second"></span>
+              <span class="third"></span>
+            </label>
+            <ul class="hidden-menu">
+                <li><a href="#">Справочная информация о бюджете</a></li>
+                <li><a href="#">Обращение руководителя</a></li>
+                <li><a href="#">Планирование бюджета</a></li>
+                <li><a href="#">Исполнение бюджета</a></li>
+                <li><a href="#">Государственные программы</a></li>
+                <li><a href="#">Государственный долг</a></li>
+                <li><a href="#">Социально-экономическое развитие</a></li>
+                <li><a href="#">Межбюджетные отношения</a></li>
+                <li><a href="#">Финансовый контроль</a></li>
+                <li><a href="#">Общественное участие</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+
+            <div class="content">
+               
+                <div class="header"> 
+                    <div class="container">
+                        <div class="flex flex-between">
+                            <div class="flex flex-vertical">
+                                <div class="logo">
+                                    <a href="/" class="picture-link"><img src="/images/gerb.png" /></a>
+                                </div>
+                                <h3 class="title">Открытый бюджет Волгоградской области</h3>
+                            </div>
+                            <div class="flex flex-vertical">
+                                <a href="#"><img src="/images/ochki.png" /></a>
+                                <div class="search flex flex-vertical">
+                                    <form class="search-form flex flex-between">
+                                        <input placeholder="Поиск..." type="text" name="search_word" />
+                                        <input type="submit" value=" " />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+<!--                carousel1.css, components/main.css         -->
+               <link href="/style/carousel1.css" rel="stylesheet" />
+               <link href="/style/components/main.css" rel="stylesheet" />
+               
+                <div class="container marg-t flex">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <a href="#" class="flex" style="background-image: url('/images/rodina.png');">
+<!--                                    <img src="/images/rodina.png" alt="" title="" />-->
+                                </a>
+                                <div class="flex-caption">
+                                    <div class="caption_title_line">
+                                        <p>Мемориальный комплекс "Героям Сталинградской битвы"</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="flex"  style="background-image: url('/images/rodina.png');">
+                                </a>
+                                <div class="flex-caption">
+                                    <div class="caption_title_line">
+                                        <p>Мемориальный комплекс 2 "Героям Сталинградской битвы 2"</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="left-block">
+                        <ul class="main-menu flex flex-between flex-column">
+                            <li><a href="#" class="upper">О бюджете</a></li>
+                            <li><a href="#" class="upper">Бюджет для граждан</a></li>
+                            <li><a href="#" class="upper">Госпрограммы</a></li>
+                            <li><a href="#" class="upper">Исполнение бюджета</a></li>
+                            <li><a href="#" class="upper">Законы о бюджете</a></li>
+                            <li><a href="#" class="upper">Приоритетные направления РФ</a></li>
+                            <li><a href="#" class="upper">Чемпионат мира 2018</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+<!--                components/links.css                         -->
+               <link href="/style/components/links.css" rel="stylesheet" />
+                <div class="container marg-t flex flex-between">
+                    <div class="marg-r link flex"><div class="hover-block flex flex-vertical flex-center"><a href="#" class="picture-link upper text-center">Бюджетный калькулятор</a></div></div>
+                    <div class="marg-r link flex"><div class="hover-block flex flex-vertical flex-center"><a href="#" class="picture-link upper text-center">Пройти опрос</a></div></div>
+                    <div class="link flex"><div class="hover-block  flex flex-vertical flex-center"><a href="#" class="picture-link upper text-center">Форум</a></div></div>
+                </div> 
+                
+<!--                components/map.css                         -->
+               <link href="/style/components/map.css" rel="stylesheet" />
+                <div class="container marg-t">
+                    <div class="shadow-block flex flex-vertical flex-wrap map">
+                        <div class="info">
+                            <select name="region" id="region" size="1" class="select2 big-marg-b"></select>
+                            <div id="region_info" class="big-marg-b">
+                                <h3 class="rg_h3 flex flex-vertical big-marg-b"><img src="/images/gerb_reg.png" class="marg-r">Волгоградская область</h3>
+                                <div class="marg-t flex flex-vertical">
+                                    <img src="/images/fortime.png" class="marg-r">
+                                    <div>
+                                        <p class="p-header">Административный центр</p>
+                                        <p class="p-body">г. Волгоград</p>
+                                    </div>
+                                </div>
+                                <div class="marg-t flex flex-vertical">
+                                    <img src="/images/img2.png" class="marg-r">
+                                    <div>
+                                        <p class="p-header">Численность населения</p>
+                                        <p class="p-body">2 535 202 чел.</p>
+                                    </div>
+                                </div>
+                                <div class="marg-t flex flex-vertical">
+                                    <img src="/images/img3.png" class="marg-r">
+                                    <div>
+                                        <p class="p-header">Площадь территории</p>
+                                        <p class="p-body">112 877 кв.км.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="btn-yellow">Перейти в раздел</a>
+                            </div>
+                        </div>
+                        
+                        <div id="vmap" style="width: 420px; height: 420px;"></div>
+                        
+                        <div class="diagramms">
+                            <p class="text-right marg-b grey-text">Данные на 01.07.2017</p>
+                        </div>
+                    </div>
+                </div>
+                
+<!--                components/news.css                         -->
+               <link rel="stylesheet" href="/style/components/news.css">
+               <div class="container marg-t">
+                   <div class="shadow-block flex news-block">
+                       <div class="news-item flex flex-column flex-between">
+                           <div>
+                                <div class="news-image">
+                                   <img src="/images/news1.png">
+                               </div>
+                               <p class="date">6 июля 2017 16:54</p>
+                               <a href="#" class="news-header">В Волгоградской области продолжается оздоровительная кампания</a>
+                           </div>
+                           <div class="social">
+                               <a href="#"><img src="/images/fb.png" alt="Facebook"></a>
+                               <a href="#"><img src="/images/vk.png" alt="Vkontakte"></a>
+                               <a href="#"><img src="/images/tw.png" alt="Twitter"></a>
+                           </div>
+                       </div>
+                       <div class="news-item flex flex-column flex-between">
+                           <div>
+                               <div class="news-image">
+                                   <img src="/images/news2.png">
+                               </div>
+                               <p class="date">5 июля 2017 12:54</p>
+                               <a href="#" class="news-header">В медучреждениях региона проходит независимая оценка качества услуг</a>
+                           </div>
+                           <div class="social">
+                               <a href="#"><img src="/images/fb.png" alt="Facebook"></a>
+                               <a href="#"><img src="/images/vk.png" alt="Vkontakte"></a>
+                               <a href="#"><img src="/images/tw.png" alt="Twitter"></a>
+                           </div>
+                       </div>
+                       <div class="news-item flex flex-column flex-between">
+                           <div>
+                               <div class="news-image">
+                                   <img src="/images/news3.png">
+                               </div>
+                               <p class="date">4 июля 2017 11:00</p>
+                               <a href="#" class="news-header">Андрей Бочаров провел рабочую встречу с Юрием Афониным</a>
+                           </div>
+                           <div class="social">
+                               <a href="#"><img src="/images/fb.png" alt="Facebook"></a>
+                               <a href="#"><img src="/images/vk.png" alt="Vkontakte"></a>
+                               <a href="#"><img src="/images/tw.png" alt="Twitter"></a>
+                           </div>
+                       </div>
+                       <div class="news-item flex flex-column flex-between">
+                           <div>
+                               <div class="news-image">
+                                   <img src="/images/news4.png">
+                               </div>
+                               <p class="date">3 июля 2017 17:34</p>
+                               <a href="#" class="news-header">В Волгоградском регионе подвели итоги театрального сезона</a>
+                           </div>
+                           <div class="social">
+                               <a href="#"><img src="/images/fb.png" alt="Facebook"></a>
+                               <a href="#"><img src="/images/vk.png" alt="Vkontakte"></a>
+                               <a href="#"><img src="/images/tw.png" alt="Twitter"></a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               
+<!--               js/slick/slick.css                           -->
+               <div class="container marg-t">
+                   <div class="shadow-block">
+                       <div class="carousel3">
+                            <section class="regular_first slider flex flex-vertical">
+                                <div class="blue-slide text-center" style="background-image:linear-gradient(rgba(67, 146, 192, 0.9), rgba(67, 146, 192, 0.7)), url('/images/raz1.jpg');"> 
+                                   <div class="carousel-inner flex flex-vertical">
+                                        <a href="#" class="picture-link upper">Здравоохранение</a>
+                                    </div> 
+                                </div>
+                                <div class="blue-slide text-center flex flex-vertical" style="background-image:linear-gradient(rgba(67, 146, 192, 0.9), rgba(67, 146, 192, 0.7)), url('/images/raz2.jpg');">
+                                    <div class="carousel-inner flex flex-vertical">
+                                        <a href="#" class="picture-link upper">Социальное обеспечение</a>
+                                    </div> 
+                                </div>
+                                <div class="blue-slide text-center flex flex-vertical" style="background-image:linear-gradient(rgba(67, 146, 192, 0.9), rgba(67, 146, 192, 0.7)), url('/images/raz3.jpg');">
+                                    <div class="carousel-inner flex flex-vertical">
+                                        <a href="#" class="picture-link upper">Образование</a>
+                                    </div> 
+                                </div>
+                                <div class="blue-slide text-center flex flex-vertical" style="background-image:linear-gradient(rgba(67, 146, 192, 0.9), rgba(67, 146, 192, 0.7)), url('/images/raz4.jpg');">
+                                    <div class="carousel-inner flex flex-vertical">
+                                        <a href="#" class="picture-link upper">Культура</a>
+                                    </div> 
+                                </div>
+                            </section>
+				        </div>
+                   </div>
+               </div>
+               
+<!--               js/slick/slick.css                           -->
+               <div class="container marg-t">
+                   <div class="shadow-block">
+                       <div class="carousel2">
+                          <section class="regular slider flex flex-vertical">
+                              <div class="slide">
+                                  <div class="flex flex-center marg-b">
+                                      <div class="circle-image text-center">
+                                          <img src="/images/carousel/dva1.png">
+                                      </div>
+                                  </div>
+                                  <p class="upper text-center"><a href="#">Правительство Российской федерации</a></p>
+                              </div>
+                              <div class="slide">
+                                  <div class="flex flex-center marg-b">
+                                      <div class="circle-image text-center">
+                                          <img src="/images/carousel/dva2.png">
+                                      </div>
+                                  </div>
+                                  <p class="upper text-center"><a href="#">Министерство финансов Российской федерации</a></p>
+                              </div>
+                              <div class="slide">
+                                  <div class="flex flex-center marg-b">
+                                      <div class="circle-image text-center">
+                                          <img src="/images/carousel/dva3.png">
+                                      </div>
+                                  </div>
+                                  <p class="upper text-center"><a href="#">Казначейство Российской федерации</a></p>
+                              </div>
+                              <div class="slide">
+                                  <div class="flex flex-center marg-b">
+                                      <div class="circle-image text-center">
+                                          <img src="/images/carousel/dva4.png">
+                                      </div>
+                                  </div>
+                                  <p class="upper text-center"><a href="#">Государственные услуги Российской федерации</a></p>
+                              </div>
+                              <div class="slide">
+                                  <div class="flex flex-center marg-b">
+                                      <div class="circle-image text-center">
+                                          <img src="/images/carousel/dva5.png">
+                                      </div>
+                                  </div>
+                                  <p class="upper text-center"><a href="#">Официальный портал Волгоградской области</a></p>
+                              </div>
+                              <div class="slide">
+                                  <div class="flex flex-center marg-b">
+                                      <div class="circle-image text-center">
+                                          <img src="/images/carousel/dva5.png">
+                                      </div>
+                                  </div>
+                                  <p class="upper text-center"><a href="#">Официальный портал Волгоградской области</a></p>
+                              </div>
+                          </section>
+                       </div>
+                   </div>
+               </div>
+               
+               
+<!--               js/slick/slick.css                           -->
+               <div class="container marg-t">
+                   <div class="shadow-block">
+                        <div class="carousel4">
+                            <section class="regular_third slider flex flex-vertical">
+                                <div class="slide text-center">
+                                    <a href="#"><img src="images/rek1.png"></a>
+                                </div>
+                                <div class="slide text-center">
+                                    <a href="#"><img src="images/rek2.png"></a>
+                                </div>
+                                <div class="slide text-center">
+                                    <a href="#"><img src="images/rek3.png"></a>
+                                </div>
+                                <div class="slide text-center">
+                                    <a href="#"><img src="images/rek1.png"></a>
+                                </div>
+                            </section>
+                        </div>
+                   </div>
+               </div>
+                
+            </div>
+        </div>
+
+
+
+        <div class="footer big-marg-t">
+            <div class="container flex flex-between">
+                <div class="flex">
+                    <div class="marg-r">
+                        <a href="/" class="picture-link"><img src="/images/gerb.png" /></a>
+                    </div>
+                    <div class="address">
+                        <p>Комитет финансов Волгоградской области</p>
+                        <p>400066, Волгоград, ул. Порт-Саида, 7</p>
+                        <p>телефон: (8442) 30 91 06</p>
+                        <p>факс: (8442) 38 58 91</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="upper text-right">мы в социальных сетях</p>
+                    <div class="b_soc">
+                        <a href="#"><img src="/images/b_vk.png" /></a>
+                        <a href="#"><img src="/images/b_tw.png" /></a>
+                        <a href="#"><img src="/images/b_fb.png" /></a>
+                        <a href="#"><img src="/images/b_ok.png" /></a>
+                        <a href="#"><img src="/images/b_rss.png" /></a>
+                    </div>
+                    <div class="flex flex-between marg-t">
+                        <a href="#" class="picture-link"><img src="/images/sitemap.png" alt="Карта сайта"></a>
+                        <img src="/images/metrika.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="/libs/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="/js/carousel1.js"></script>
+    <script src="/js/jquery.vmap.js" type="text/javascript"></script>
+    <script src="/js/maps/jquery.vmap.vlg.js" type="text/javascript"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    
+    <script>
+        if ($(window).width() < '1771') {
+            $('.hidden-menu-ticker').change(function(){
+              if($('.hidden-menu-ticker').prop("checked")){
+                $('.footer .container').css('margin-left', '320px');
+              }else{
+                $('.footer .container').css('margin-left', 'auto');
+              }
+            });
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        // Массив всех объектов	
+        /*
+        <a href="javascript://" onclick="return_volg();"><h3 class="rg_h3" style="margin-top: -10px;"><img src="/images/volga_gerb.png" class="region_img" style="padding-left: 5px;">Волгоградская область</h3></a>
+        */
+
+
+
+
+        var region_list = {
+            "pz": ["г. Волгоград", "1 015 586", "859,4", "1 181,8", "Волгоградская область"],
+            "ur": ["г. Урюпинск", "26 596", "3 466,39", "7,67", "Урюпинский район"],
+            "cr": ["пгт Новониколаевский", "21 118", "2 363,30", "8,94", "Новониколаевский район"],
+            "sa": ["станица Нехаевская", "13 516", "2 182,54", "6,19", "Нехаевский район"],
+            "so": ["г. Новоаннинский", "33 679", "3 083,89", "10,92", "Новоаннинский район"],
+            "kb": ["станица Алексеевская", "16 202", "2 297,16", "7,05", "Алексеевский район"],
+            "kc": ["станица Преображенская", "16 395", "2 070,80", "7,92", "Киквидзенский район"],
+            "st": ["станица Кумылженская", "19 822", "2 977", "6,66", "Кумылженский район"],
+            "ks": ["г. Михайловка", "24 547", "3 660", "6,8", "Михайловский район"],
+            "ro": ["пгт Елань", "30 222", "2 667,00", "11,33", "Еланский район"],
+            "kk": ["г. Серафимович", "23 575", "4 323,53", "5,45", "Серафимовичиский район"],
+            "as": ["г. Фролово", "13 965", "3 258,87", "4,29", "Фроловский район"],
+            "ad": ["р.п. Даниловка", "14 638", "2 960,74", "4,94", "Даниловский район"],
+            "vl": ["пгт Рудня", "15 582", "1 946,58", "8", "Рудянский район"],
+            "vn": ["г. Жирновск", "39 759", "2 969,69", "13,39", "Жирновский район"],
+            "bl": ["г. Котово", "31 321", "2 444,34", "12,81", "Котовский район"],
+            "ky": ["г. Камышин", "39 898", "3 563,04", "11,2", "Камышинский район"],
+            "or": ["с. Ольховка", "17 623", "3 225,60", "5,34", "Ольховский район"],
+            "tl": ["р.п. Иловля", "33 303", "4 155,39", "8,01", "Иловлинский район"],
+            "bn": ["станица Клетская", "17 613", "3 555,16", "4,95", "Клетский район"],
+            "kj": ["г. Суровикино", "34 105", "3 399,27", "10,03", "Суровикинский район"],
+            "ul": ["р.п. Чернышковский", "15 754", "3 079,96", "5,12", "Чернышковский район"],
+            "sm": ["р.п. Городище", "60 245", "2 180,91", "27,62", "Городищенский район"],
+            "mc": ["г. Дубовка", "29 570", "3 140,46", "9,42", "Дубовский район"],
+            "rz": ["пгт Быково", "25 813", "3 410,16", "7,57", "Быковский район"],
+            "tb": ["г. Николаевск", "29 767", "3 436,36", "8,66", "Николаевский район"],
+            "kn": ["с. Старая Полтавка", "18 670", "4 076,77", "4,58", "Старополтаский район"],
+            "ps": ["г. Палласовка", "40 398", "12 361,09", "3,25", "Паллосовский район"],
+            "no": ["пгт Средняя Ахтуба", "60 815", "1 957,16", "31,07", "Среднеахтубинский район"],
+            "tr": ["г. Ленинск", "30 271", "4 000", "7,57", "Ленинский район"],
+            "vm": ["г. Волжский", "326 055", "229,12", "2173,7", "Волжский"],
+            "sr": ["р.п. Светлый Яр", "36 499", "3 185,00", "11,46", "Светлоярский район"],
+            "mr": ["пгт Октябрьский", "20 371", "3 811,07", "5,35", "Октябрьский район"],
+            "cu": ["г. Котельниково", "36 621", "3 471,14", "10,55", "Котельниковский район"],
+            "ss": ["г. Калач-на-Дону", "53 957", "4 225,33", "12,77", "Калачёвский район"],
+        };
+
+        function return_volg() {
+            $('#region_info').html('<h3 class="rg_h3 flex flex-vertical marg-t"><img src="/images/gerb_reg.png" class="marg-r">Волгоградская область</h3><div class="marg-t flex flex-vertical"><img src="/images/fortime.png" class="marg-r"><div><p class="p-header">Административный центр</p><p class="p-body">г. Волгоград</p></div></div><div class="marg-t flex flex-vertical"><img src="/images/img2.png" class="marg-r"><div><p class="p-header">Численность населения</p><p class="p-body">2 535 202 чел.</p></div></div><div class="marg-t flex flex-vertical"><img src="/images/img3.png" class="marg-r"><div><p class="p-header">Площадь территории</p><p class="p-body">112 877 кв.км.</p></div></div>');
+            $('[name="select_you"]').attr('name', '');
+
+        }
+
+        function return_town_volg() {
+            $('[name="select_you"]').attr('name', '');
+            $("#jqvmap1_pz").attr('name', 'select_you');
+            $('#region_info').html('<h3 class="rg_h3 flex flex-vertical marg-t"><img src="/images/gerb_reg.png" class="marg-r">г. Волгоград</h3><div class="marg-t flex flex-vertical"><img src="/images/fortime.png" class="marg-r"><div><p class="p-header">Административный центр</p><p class="p-body">' + region_list["pz"][0] + '</p></div></div><div class="marg-t flex flex-vertical"><img src="/images/img2.png" class="marg-r"><div><p class="p-header">Численность населения</p><p class="p-body">' + region_list["pz"][1] + ' чел.</p></div></div><div class="marg-t flex flex-vertical"><img src="/images/img3.png" class="marg-r"><div><p class="p-header">Площадь территории</p><p class="p-body">' + region_list["pz"][2] + ' кв.км.</p></div></div>');
+            $('.select2').html(
+                jQuery.each(region_list, function(i, val) {
+                    if (region_list[code] == val) {
+                        $(".select2").append('<option value="' + i + '" selected>' + val[4] + '</option>')
+                    } else {
+                        $(".select2").append('<option value="' + i + '">' + val[4] + '</option>');
+                    }
+                })
+            );
+
+
+        }
+
+
+
+        jQuery.each(region_list, function(i, val) {
+            $(".select2").append('<option value="' + i + '">' + val[4] + '</option>');
+        })
+
+
+        var data_obj = {
+
+        };
+
+        colorRegion = '#1076C8'; // Цвет всех регионов
+        focusRegion = '#f6bd68'; // Цвет подсветки регионов при наведении на объекты из списка
+        selectRegion = '#0A4C82'; // Цвет изначально подсвеченных регионов
+
+        highlighted_states = {};
+
+        for (iso in data_obj) {
+            highlighted_states[iso] = selectRegion;
+        };
+
+
+
+        $(document).ready(function() {
+            $('#vmap').vectorMap({
+                map: 'volgograd',
+                backgroundColor: 'transparent',
+                borderColor: '#ffffff',
+                borderWidth: 1,
+                borderOpacity: 1,
+                color: colorRegion,
+                colors: highlighted_states,
+                hoverColor: focusRegion,
+                hoverOpacity: 1,
+                selectedColor: focusRegion,
+                enableZoom: false,
+                showTooltip: true,
+                showLabels: true,
+                pins: {
+                    "pz": "<a href='javascript://' onclick='return_town_volg();'><img src='/images/mappoint.png'><span id='afterImage'>Волгоград</span></a>",
+                },
+                pinMode: 'content',
+                onLabelShow: function(event, label, code) {
+                    name = '<strong>' + label.text() + '</strong><br>';
+                    //alert($('.jqvmap-label').attr("top"));	
+
+                    if (data_obj[code]) {
+                        list_obj = '<ul>';
+                        for (ob in data_obj[code]) {
+                            list_obj += '<li>' + data_obj[code][ob] + '</li>';
+                        }
+                        list_obj += '</ul>';
+                    } else {
+                        list_obj = '';
+                    }
+                    label.html(name + list_obj);
+                    list_obj = '';
+                },
+                onRegionClick: function(element, code, region) {
+                    $('[name="select_you"]').attr('name', '');
+                    $("#jqvmap1_" + code).attr('name', 'select_you');
+                
+                    $('#region_info').html('<h3 class="rg_h3 flex flex-vertical marg-t"><img src="/images/gerb_reg.png" class="marg-r">' + region + '</h3><div class="marg-t flex flex-vertical"><img src="/images/fortime.png" class="marg-r"><div><p class="p-header">Административный центр</p><p class="p-body">' + region_list[code][0] + '</p></div></div><div class="marg-t flex flex-vertical"><img src="/images/img2.png" class="marg-r"><div><p class="p-header">Численность населения</p><p class="p-body">' + region_list[code][1] + ' чел.</p></div></div><div class="marg-t flex flex-vertical"><img src="/images/img3.png" class="marg-r"><div><p class="p-header">Площадь территории</p><p class="p-body">' + region_list[code][2] + ' кв.км.</p></div></div>');
+                    
+                    $('.select2').html('<select size="1" class="select2"></select>');
+                    jQuery.each(region_list, function(i, val) {
+                        if (region_list[code] == val) {
+                            $(".select2").append('<option value="' + i + '" selected>' + val[4] + '</option>')
+                        } else {
+                            $(".select2").append('<option value="' + i + '">' + val[4] + '</option>');
+                        }
+                    })
+
+
+                }
+            });
+        });
+
+
+        $('.select2').on('change', function() {
+            var code = $(".select2 option:selected").val();
+            var region = $(".select2 option:selected").text();
+
+            $('[name="select_you"]').attr('name', '');
+            $("#jqvmap1_" + code).attr('name', 'select_you');
+
+            $('#region_info').html('<h3 class="rg_h3 flex flex-vertical marg-t"><img src="/images/gerb_reg.png" class="marg-r">' + region + '</h3><div class="marg-t flex flex-vertical"><img src="/images/fortime.png" class="marg-r"><div><p class="p-header">Административный центр</p><p class="p-body">' + region_list[code][0] + '</p></div></div><div class="marg-t flex flex-vertical"><img src="/images/img2.png" class="marg-r"><div><p class="p-header">Численность населения</p><p class="p-body">' + region_list[code][1] + ' чел.</p></div></div><div class="marg-t flex flex-vertical"><img src="/images/img3.png" class="marg-r"><div><p class="p-header">Площадь территории</p><p class="p-body">' + region_list[code][2] + ' кв.км.</p></div></div>');
+
+        })
+
+
+        $(function() {
+            $('.jvectormap-region').mouseover(function() {
+                $(this).css('fill', focusRegion);
+            });
+            $('.jvectormap-region').mouseout(function() {
+                $(this).css('fill', colorRegion);
+            });
+        });
+
+        d3.selectAll('p.value').append('span')
+            .attr('class', 'currency')
+            .text(' руб');
+    </script>
+    <script type="text/javascript">
+        var width = 170;
+        var height = 170;
+        var margin = 22;
+
+        var color = d3.scale.ordinal()
+            .range(["url(#linear-gradient)", "#037cd3"]);
+
+        var radius = Math.min(width - 2 * margin, height - 2 * margin) / 2;
+
+        var radiusSmall = margin;
+
+        var plainName = 'План';
+        var doneName = 'Исполнено';
+        var executedName = ['Доходы', 'executed'];
+        var costsName = ['Расходы', 'costs'];
+        var deficitName = ['Дефицит/профицит', 'deficit'];
+
+        var diagramRegion = {
+            "pz": [20882417000, 19797866000, 20882417000, 18797866000, 20882417000, 17797866000],
+            "ur": [21882417000, 19797866000, 21882417000, 19797866000, 21882417000, 19797866000],
+            "cr": [22882417000, 19797866000, 22882417000, 19797866000, 22882417000, 19797866000],
+            "sa": [23882417000, 19797866000, 23882417000, 19797866000, 23882417000, 19797866000],
+            "so": [24882417000, 19797866000, 24882417000, 19797866000, 24882417000, 19797866000],
+            "kb": [25882417000, 19797866000, 25882417000, 19797866000, 25882417000, 19797866000],
+            "kc": [26882417000, 19797866000, 26882417000, 19797866000, 26882417000, 19797866000],
+            "st": [27882417000, 19797866000, 27882417000, 19797866000, 27882417000, 19797866000],
+            "ks": [28882417000, 19797866000, 28882417000, 19797866000, 28882417000, 19797866000],
+            "ro": [29882417000, 19797866000, 29882417000, 19797866000, 29882417000, 19797866000],
+            "kk": [30882417000, 19797866000, 30882417000, 19797866000, 30882417000, 19797866000],
+            "as": [31882417000, 19797866000, 31882417000, 19797866000, 31882417000, 19797866000],
+            "ad": [32882417000, 19797866000, 32882417000, 19797866000, 32882417000, 19797866000],
+            "vl": [33882417000, 19797866000, 33882417000, 19797866000, 33882417000, 19797866000],
+            "vn": [34882417000, 19797866000, 34882417000, 19797866000, 34882417000, 19797866000],
+            "bl": [35882417000, 19797866000, 35882417000, 19797866000, 35882417000, 19797866000],
+            "ky": [36882417000, 19797866000, 36882417000, 19797866000, 36882417000, 19797866000],
+            "or": [37882417000, 19797866000, 37882417000, 19797866000, 37882417000, 19797866000],
+            "tl": [38882417000, 19797866000, 38882417000, 19797866000, 38882417000, 19797866000],
+            "bn": [39882417000, 19797866000, 39882417000, 19797866000, 39882417000, 19797866000],
+            "kj": [40882417000, 19797866000, 40882417000, 19797866000, 40882417000, 19797866000],
+            "ul": [41882417000, 19797866000, 41882417000, 19797866000, 41882417000, 19797866000],
+            "sm": [42882417000, 19797866000, 42882417000, 19797866000, 42882417000, 19797866000],
+            "mc": [43882417000, 19797866000, 43882417000, 19797866000, 43882417000, 19797866000],
+            "rz": [44882417000, 19797866000, 44882417000, 19797866000, 44882417000, 19797866000],
+            "tb": [45882417000, 19797866000, 45882417000, 19797866000, 45882417000, 19797866000],
+            "kn": [46882417000, 19797866000, 46882417000, 19797866000, 46882417000, 19797866000],
+            "ps": [47882417000, 19797866000, 47882417000, 19797866000, 47882417000, 19797866000],
+            "no": [48882417000, 19797866000, 48882417000, 19797866000, 48882417000, 19797866000],
+            "tr": [49882417000, 19797866000, 49882417000, 19797866000, 49882417000, 19797866000],
+            "vm": [50882417000, 19797866000, 50882417000, 19797866000, 50882417000, 19797866000],
+            "sr": [51882417000, 19797866000, 51882417000, 19797866000, 51882417000, 19797866000],
+            "mr": [52882417000, 19797866000, 52882417000, 19797866000, 52882417000, 19797866000],
+            "cu": [53882417000, 19797866000, 53882417000, 19797866000, 53882417000, 19797866000],
+            "ss": [54882417000, 19797866000, 54882417000, 19797866000, 54882417000, 19797866000],
+        };
+
+        var executed = [{
+                title: executedName[0],
+                name: plainName,
+                value: Math.max(diagramRegion["pz"][0], diagramRegion["pz"][1]) + (Math.max(diagramRegion["pz"][0], diagramRegion["pz"][1]) - Math.min(diagramRegion["pz"][0], diagramRegion["pz"][1]))
+            },
+            {
+                title: executedName[1],
+                name: doneName,
+                value: -(Math.max(diagramRegion["pz"][0], diagramRegion["pz"][1]) - Math.min(diagramRegion["pz"][0], diagramRegion["pz"][1]))
+            }
+        ];
+        console.log(executed);
+
+        var costs = [{
+                title: costsName[0],
+                name: plainName,
+                value: Math.max(diagramRegion["pz"][2], diagramRegion["pz"][3]) + (Math.max(diagramRegion["pz"][2], diagramRegion["pz"][3]) - Math.min(diagramRegion["pz"][2], diagramRegion["pz"][3]))
+            },
+            {
+                title: costsName[1],
+                name: doneName,
+                value: -(Math.max(diagramRegion["pz"][2], diagramRegion["pz"][3]) - Math.min(diagramRegion["pz"][2], diagramRegion["pz"][3]))
+            }
+        ];
+        console.log(costs);
+
+        var deficit = [{
+                title: deficitName[0],
+                name: plainName,
+                value: Math.max(diagramRegion["pz"][4], diagramRegion["pz"][5]) + (Math.max(diagramRegion["pz"][4], diagramRegion["pz"][5]) - Math.min(diagramRegion["pz"][4], diagramRegion["pz"][5]))
+            },
+            {
+                title: deficitName[1],
+                name: doneName,
+                value: -(Math.max(diagramRegion["pz"][4], diagramRegion["pz"][5]) - Math.min(diagramRegion["pz"][4], diagramRegion["pz"][5]))
+            }
+        ];
+        console.log(deficit);
+
+        var arc = d3.svg.arc()
+            .outerRadius(radius)
+
+        ;
+
+        var pie = d3.layout.pie()
+            .sort(null)
+            .value(function(d) {
+                return d.value;
+            });
+
+        d3.select('.diagramms').append('div').attr('class', 'pz');
+
+        createCircle(executed, plainName, doneName, diagramRegion["pz"][0], diagramRegion["pz"][1]);
+
+        createCircle(costs, plainName, doneName, diagramRegion["pz"][2], diagramRegion["pz"][3]);
+
+        createCircle(deficit, plainName, doneName, diagramRegion["pz"][4], diagramRegion["pz"][5]);
+
+        function createCircle(data, plainName, doneName, plain, done) {
+            var classCircle = data["1"].title;
+
+            var svg = d3.select("body").select('.pz').append('div').attr('class', 'circle-' + classCircle + ' circle flex').append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .style("overflow", "inherit")
+                .append("g")
+                .attr("transform",
+                    "translate(" + (width / 2) + "," + (height / 2) + ")");
+
+            var g = svg.selectAll(".arc")
+                .data(pie(data))
+                .enter().append("g")
+                .attr("class", "arc");
+
+            g.append("path")
+                .attr("d", arc)
+                .style("fill", function(d) {
+                    return color(d.data.value);
+                })
+                .attr('transform', 'rotate(15)');
+
+            svg.append('circle')
+                .attr('cx', 0)
+                .attr('cy', 0)
+                .attr('r', margin)
+                .style('fill', '#fff');
+
+            var div = d3.select('div.circle-' + classCircle).append('div').attr('class', 'desc');
+
+            div.append('h3')
+                .attr('class', 'h3-title marg-b')
+                .text(function(d) {
+                    return data["0"].title
+                });
+
+            div.append('p')
+                .attr('class', 'p-name')
+                .text(plainName);
+
+            div.append('p')
+                .attr('class', 'value plain')
+                .text(plain);
+
+            div.append('p')
+                .attr('class', 'p-name')
+                .text(doneName);
+
+            div.append('p')
+                .attr('class', 'value done')
+                .text(done);
+        };
+
+
+
+        d3.selectAll('p.value').append('span')
+            .attr('class', 'currency')
+            .text(' руб');
+
+
+
+        var gradient = d3.select('svg').append('linearGradient')
+            .attr('id', 'linear-gradient')
+            .attr('x1', 0)
+            .attr('y1', 0)
+            .attr('x2', '80%')
+            .attr('y2', '100%');
+
+        gradient.append("stop")
+            .attr('class', 'start')
+            .attr("offset", "0%")
+            .attr("stop-color", "#eeeeee")
+            .attr("stop-opacity", 1);
+
+        gradient.append("stop")
+            .attr('class', 'end')
+            .attr("offset", "50%")
+            .attr("stop-color", "#eaeaea")
+            .attr("stop-opacity", 1);
+
+        gradient.append("stop")
+            .attr('class', 'end')
+            .attr("offset", "100%")
+            .attr("stop-color", "#b6b6b6")
+            .attr("stop-opacity", 1);
+    </script>
+
+    <script src="./js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function() {
+            $(".regular").slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true,
+                mobileFirst: true,
+                responsive: [{
+                        breakpoint: 1315,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 5,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 960,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 0,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    }
+                ],
+                prevArrow: '<div class="prev2"><img src="images/buttons/prev.png" style="cursor: pointer;"></div>',
+                nextArrow: '<div class="next2"><img src="images/buttons/next.png" style="cursor: pointer;"></div>'
+
+
+            });
+            $(".regular_first").slick({
+                infinite: false,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                mobileFirst: true,
+                responsive: [{
+                        breakpoint: 1315,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 960,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 0,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ],
+                dots: true,
+                arrows: true,
+                prevArrow: '<div class="prev2"><img src="images/buttons/prev.png" style="margin-left: -10px;cursor: pointer;"></div>',
+                nextArrow: '<div class="next2"><img src="images/buttons/next.png" style="margin-left: 10px; cursor: pointer;"></div>'
+            });
+            $(".regular_third").slick({
+                centerPadding: "1px",
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                dots: true,
+                arrows: true,
+                mobileFirst: true,
+                responsive: [{
+                        breakpoint: 1315,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 960,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+
+                    {
+                        breakpoint: 0,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    }
+                ],
+                prevArrow: '<div class="prev2"><img src="images/buttons/prev.png" style="margin-left: -10px;cursor: pointer;"></div>',
+                nextArrow: '<div class="next2"><img src="images/buttons/next.png" style="margin-left: 10px; cursor: pointer;"></div>'
+            });
+        });
+    </script>
+</body>
+
+</html>

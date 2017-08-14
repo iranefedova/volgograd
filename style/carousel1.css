@@ -1,0 +1,157 @@
+.slider_container {
+	width: 750px;
+	clear: both;
+}
+.flex-caption{
+	position: absolute;
+	left: 20px;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+    width: 305px;
+}
+.caption_title_line{
+	height: 45px;
+	padding: 15px;
+}
+.caption_title_line p{
+	color: #fff;
+	font-size: 16px;
+	line-height: 130%!important;
+	padding: 0;
+	margin: 0;
+	opacity: none;
+}
+.flex-container a:active,
+.flexslider a:active {
+	outline: none;
+}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.flexslider .slides > li {
+	display: none;
+} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+	display: block;
+    width: 100%;
+}
+.flex-pauseplay span {
+	text-transform: capitalize;
+}
+.slides:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+} 
+html[xmlns] .slides {
+	display: block;
+} 
+* html .slides {
+	height: 1%;
+}
+.no-js .slides > li:first-child {
+	display: block;
+}
+.flexslider {
+	position: relative;
+	zoom: 1;
+    width: 65%;
+}
+.flexslider .slides {
+	zoom: 1;
+    height: 100%;
+}
+.flexslider .slides > li {
+	position: relative;
+    height: 100%;
+}
+
+.flexslider .slides > li > a{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.flex-container {
+	zoom: 1;
+	position: relative;
+}
+
+/* Direction Nav */
+.flex-direction-nav li a {
+	width: 45px;
+	height: 42px;
+	margin: 0;
+	display: block;
+	position: absolute;
+	right: 11px;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+.flex-direction-nav li a.next {
+	background:url(/images/next.png) no-repeat center;
+	bottom:150px;
+	right: 1px;
+}
+.flex-direction-nav li a.prev {
+	background:url(/images/prev.png) no-repeat center;
+	bottom:150px;
+	left: 1px;
+}
+.flex-direction-nav li a.next:hover {
+	background:url(/images/next.png) no-repeat center;
+}
+.flex-direction-nav li a.prev:hover {
+	background:url(/images/prev.png) no-repeat center;
+}
+.flex-direction-nav li a.disabled {
+	opacity: .3;
+	filter:alpha(opacity=30);
+	cursor: default;
+}
+
+/* Control Nav */
+.flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: -30px;
+	text-align: center;
+}
+.flex-control-nav li {
+	margin: 0 0 0 5px;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+.flex-control-nav li:first-child {
+	margin: 0;
+}
+.flex-control-nav li a {
+	width: 13px;
+	height: 13px;
+	display: block;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+.flex-control-nav li a:hover {
+	background-position: 0 -13px;
+}
+.flex-control-nav li a.active {
+	background-position: 0 -26px;
+	cursor: default;
+}

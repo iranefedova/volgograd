@@ -1,0 +1,88 @@
+.map {
+    background-image: url("/images/map_back.png");
+    background-size: cover;
+}
+
+.p-header {
+    color: #919090;
+    margin-bottom: 2px;
+}
+
+.p-body {
+    margin: 0;
+}
+
+.map > .info {
+    flex: 0.9;
+    align-self: flex-start;
+}
+
+#afterImage {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #000;
+    display: inline-block;
+    margin-left: -10px;
+    padding-left: 8px;
+    padding-right: 7px;
+}
+
+.currency {
+    font-size: 14px;
+}
+
+.value {
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+
+.plain {
+    color: #7b7b7b;
+}
+
+.done {
+    color: #037cd3;
+}
+
+.btn-yellow {
+    background-color: #f6bd68;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    display: inline-block;
+    text-shadow: -1px 2px 5px #838383;
+}
+
+.btn-yellow:hover {
+    color: #fff;
+    background-color: #fec570;
+}
+
+.map select {
+    -moz-appearance: none;
+    background-image: url("/images/select.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 38px 100%;
+    border: 2px solid #dadfe6;
+    cursor: pointer;
+    padding: 10px 49px 10px 6px;
+/*    width: 284px;*/
+}
+
+#region_info div img {
+    flex-basis: 15%;
+}
+
+#vmap {
+    flex-shrink: 0;
+}
+
+.diagramms {
+    flex: 1;
+}
+
+.grey-text {
+    font-size: 16px;
+    color: #9c9595;
+}

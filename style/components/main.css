@@ -1,0 +1,74 @@
+.left-block {
+    width: 35%;
+    background-color: #fff;
+    overflow-y: scroll;
+    border-top: #e4e7ea 1px solid;
+    border-bottom: #e4e7ea 1px solid;
+}
+
+.left-block, .flexslider {
+    height: 40vh;
+}
+
+ul.main-menu {
+    list-style: none;
+    margin: 0;
+    height: 100%;
+}
+
+ul.main-menu li a {
+    color: #323232;
+    display: block;
+}
+
+ul.main-menu li a:hover {
+    color: #206db1;
+}
+
+ul.main-menu li {
+    padding: 1.1vw;
+    background-repeat: no-repeat;
+    background-size: 40px 40px, cover;
+    padding-left: 70px;
+    border-top: #e4e7ea 1px solid;
+    box-shadow: 0 23px 5px 22px #d6d6d6;
+}
+
+ul.main-menu li:nth-child(1) {
+    background-image: url("/images/menu/about.png"),
+        url("/images/menu/bgr.jpg"); 
+}
+ul.main-menu li:nth-child(2) {
+    background-image: url("/images/menu/for-citizens.png"),
+        url("/images/menu/bgr.jpg");
+}
+ul.main-menu li:nth-child(3) {
+    background-image: url("/images/menu/programs.png"),
+        url("/images/menu/bgr.jpg");
+}
+ul.main-menu li:nth-child(4) {
+    background-image: url("/images/menu/budget.png"),
+        url("/images/menu/bgr.jpg"); 
+}
+ul.main-menu li:nth-child(5) {
+    background-image: url("/images/menu/laws.png"),
+        url("/images/menu/bgr.jpg"); 
+}
+ul.main-menu li:nth-child(6) {
+    background-image: url("/images/menu/presentation.png"),
+        url("/images/menu/bgr.jpg"); 
+}
+ul.main-menu li:nth-child(7) {
+    background-image: url("/images/menu/footbal.png"),
+        url("/images/menu/bgr.jpg"); 
+}
+
+ul.main-menu li:nth-child(2n) {
+    border-right: #009cff 10px solid;
+    background-position: center left 15px, bottom -10px center;
+}
+
+ul.main-menu li:nth-child(2n+1) {
+    border-right: #206db1 10px solid;
+    background-position: center left 15px, bottom;
+}
