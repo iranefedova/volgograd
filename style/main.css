@@ -486,3 +486,15 @@ input[type="radio"].toggle:checked + label:after {
 		justify-content: space-between;
 		align-items: center;
 }
+
+.btn-download{
+	width: 36px;
+	height: 36px;
+	background-image: url(/images/btn_download.png);
+	z-index: 0;
+}
+
+.btn-download:hover{
+	background-image: url(/images/btn_download_pressed.png);
+	z-index: 1; //Чтобы не мигала при наведении
+}
