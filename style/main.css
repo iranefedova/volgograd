@@ -1,17 +1,23 @@
 /*-----------Подключение шрифтов----------*/
 
 @font-face {
-    font-family: 'Proxima Nova';
-    src: url('/fonts/Proxima_Nova/Proxima Nova/Proxima Nova Regular.otf');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Proxima Nova';
+	src: url('/fonts/Proxima_Nova/Proxima Nova Regular/Proxima Nova Regular.eot');
+	src: url('/fonts/Proxima_Nova/Proxima Nova Regular/Proxima Nova Regular.eot?#iefix')format('embedded-opentype'),
+	url('/fonts/Proxima_Nova/Proxima Nova Regular/Proxima Nova Regular.woff') format('woff'),
+	url('/fonts/Proxima_Nova/Proxima Nova Regular/Proxima Nova Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
 }
 
 @font-face {
-    font-family: 'Proxima Nova Thin';
-    src: url('/fonts/Proxima_Nova/Proxima Nova/Proxima Nova Thin.otf');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Proxima Nova Thin';
+	src: url('/fonts/Proxima_Nova/Proxima Nova Thin/Proxima Nova Thin.eot');
+	src: url('/fonts/Proxima_Nova/Proxima Nova Thin/Proxima Nova Thin.eot?#iefix')format('embedded-opentype'),
+	url('/fonts/Proxima_Nova/Proxima Nova Thin/Proxima Nova Thin.woff') format('woff'),
+	url('/fonts/Proxima_Nova/Proxima Nova Thin/Proxima Nova Thin.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
 }
 
 html,
