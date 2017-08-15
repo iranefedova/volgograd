@@ -105,12 +105,12 @@ html[xmlns] .slides {
 }
 .flex-direction-nav li a.next {
 	background:url(/images/next.png) no-repeat center;
-	bottom:150px;
+	bottom:18vh;
 	right: 1px;
 }
 .flex-direction-nav li a.prev {
 	background:url(/images/prev.png) no-repeat center;
-	bottom:150px;
+	bottom: 18vh;
 	left: 1px;
 }
 .flex-direction-nav li a.next:hover {
