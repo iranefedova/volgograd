@@ -198,6 +198,10 @@ a:active {
     justify-content: center;
 }
 
+.flex-around {
+	justify-content: space-around;
+}
+
 .picture-link {
     display: block;
 }
