@@ -214,6 +214,10 @@ a:active {
     text-align: center;
 }
 
+.marg-l {
+    margin-left: 20px;
+}
+
 .marg-r {
     margin-right: 20px;
 }
@@ -405,9 +409,14 @@ a:active {
 		text-decoration: underline;
 }
 
-.path__current, .date{
-		color: #919599;
-		font-size: 14px;
+.path__current, .date, .page__subtitle{
+	color: #919599;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.date, .page__subtitle{
+		display: block;
 }
 
 .page__title{
@@ -418,83 +427,16 @@ a:active {
 		z-index: 0;
 }
 
-/*--- switch css---*/
-.switch {
-	border: 2px solid #dadfe6;
-	border-radius: 10px;
-}
-
-.switch__btn {
-  display: inline-block;
-  padding: 5px;
-	margin: 2px;
-  position: relative;
-  text-align: center;
-  -webkit-transition: background 600ms ease, color 600ms ease;
-  transition: background 600ms ease, color 600ms ease;
-}
-
-input[type="radio"].toggle {
-  display: none;
-}
-input[type="radio"].toggle + label {
-  cursor: pointer;
-  min-width: 90px;
-}
-input[type="radio"].toggle + label:hover {
-  background: none;
-  color: #f6bd68;
-}
-input[type="radio"].toggle + label:after {
-  background: #f6bd68;
-  content: "";
-	border-radius: 5px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  -webkit-transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
-  width: 100%;
-  z-index: -1;
-}
-input[type="radio"].toggle.toggle-left + label {
-  border-right: 0;
-}
-input[type="radio"].toggle.toggle-left + label:after {
-  left: 100%;
-}
-input[type="radio"].toggle.toggle-right + label {
-  margin-left: -5px;
-}
-input[type="radio"].toggle.toggle-right + label:after {
-  left: -100%;
-}
-input[type="radio"].toggle:checked + label {
-  cursor: default;
-  color: #fff;
-  -webkit-transition: color 200ms;
-  transition: color 200ms;
-	z-index: 1;
-}
-input[type="radio"].toggle:checked + label:after {
-  left: 0;
-}
-/*--- end switch css---*/
-
 .page__content{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 }
 
-.btn-download{
-	width: 36px;
-	height: 36px;
-	background-image: url(/images/btn_download.png);
-	z-index: 0;
+.diagram__toggle{
+		display: flex;
 }
 
-.btn-download:hover{
-	background-image: url(/images/btn_download_pressed.png);
-	z-index: 1; //Чтобы не мигала при наведении
+.diagram{
+		height: 500px;
 }
