@@ -116,3 +116,25 @@
 .btn-download:hover{
 	background-color: #fec570;
 }
+
+/*---PROGRESS BAR---*/
+
+/*<div class="progress-bar">
+ <div class="progress-bar__line" style="width:25%">25%</div>
+</div>*/
+
+.progress-bar {
+  background-color:#f1f1f1;
+  border-radius:16px;
+  min-width: 200px!important;
+  width: 200px;
+}
+
+.progress-bar__line {
+  min-width: 12%!important;
+  padding-left: 10px;
+  color:#fff;
+  background-color:#206db1;
+  border-radius:16px;
+  text-align: left;
+}
