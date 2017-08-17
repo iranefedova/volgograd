@@ -124,13 +124,14 @@
 </div>*/
 
 .progress-bar {
-  background-color:#f1f1f1;
+  background-color: #dadfe6;
   border-radius:16px;
   min-width: 180px!important;
 }
 
 .progress-bar__line {
   min-width: 12%!important;
+  max-width: 95%;
   padding-left: 10px;
   color:#fff;
   background-color:#206db1;
@@ -145,6 +146,15 @@
     border: 1px solid #a8b3c4;
     border-spacing: 0;
     border-collapse: collapse;
+}
+
+.table tr:hover{
+  background: #ebebeb;
+}
+
+.table tr td:first-child{
+    text-align: left;
+    padding-left: 20px;
 }
 
 .table th, td{
@@ -170,9 +180,64 @@
 
 .table .cell-scrollable{
     min-width: 280px;
+    box-shadow: inset 0 -1px #555960;
 }
 
 .table .cell-year{
     min-width: 180px;
     border-bottom: 1px solid #479fdf;
 }
+
+/*---ACCORDION---*/
+
+ul.accordion-menu{
+  margin: 0;
+}
+
+.accordion-menu ul {
+  display: none;
+}
+
+.accordion-menu li {
+  list-style-type: none;
+}
+
+.accordion-menu input{
+  display: none;
+}
+.accordion-menu input[type=checkbox] {
+	position: absolute;
+	opacity: 0;
+}
+.accordion-menu label, .accordion-menu a {
+	position: relative;
+	display: block;
+	padding: 10px 10px 10px 64px;
+	background: #ffffff;
+	box-shadow: inset 0 -1px #555960;
+	color: #000000;
+}
+
+.accordion-menu input[type=checkbox]:checked + label + ul,
+.accordion-menu input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+	display: block;
+}
+
+/*<ul class="accordion-menu">
+ <li class="submenu">
+   <input type="checkbox" name ="group-1" id="group-1" checked>
+   <label for="group-1">ГП ВО "Защита населения и территории от чрезвычайных ситуаций, обеспечение пожарной безопасности</label>
+     <ul>
+       <li class="submenu">
+         <input type="checkbox" name ="sub-group-1" id="sub-group-1">
+         <label for="sub-group-1">Подпрограмма  1</label>
+       <ul>
+         <li><a href="#0">Пункт</a></li>
+         <li><a href="#0">Пункт</a></li>
+         <li><a href="#0">Пункт</a></li>
+       </ul>
+       </li>
+       <li><a href="#0">Мероприятие 1</a></li>
+     </ul>
+ </li>
+</ul>*/
