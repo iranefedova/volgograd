@@ -126,8 +126,7 @@
 .progress-bar {
   background-color:#f1f1f1;
   border-radius:16px;
-  min-width: 200px!important;
-  width: 200px;
+  min-width: 180px!important;
 }
 
 .progress-bar__line {
@@ -137,4 +136,43 @@
   background-color:#206db1;
   border-radius:16px;
   text-align: left;
+}
+
+/*---TABLE---*/
+
+.table {
+    background: #ffffff;
+    border: 1px solid #a8b3c4;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.table th, td{
+    text-align: center;
+    padding: 10px;
+}
+
+.table th{
+    color: #ffffff;
+    background-color: #037cd3;
+    border-left: 1px solid #479fdf;
+    /*border-bottom: 1px solid #479fdf; //Нижняя граница заголовков*/
+}
+
+.table th:first-child {
+    border-left: 1px solid #a8b3c4;
+}
+
+.table td{
+    border-left: 1px solid #a8b3c4;
+    border-bottom: 1px solid #a8b3c4;
+}
+
+.table .cell-scrollable{
+    min-width: 280px;
+}
+
+.table .cell-year{
+    min-width: 180px;
+    border-bottom: 1px solid #479fdf;
 }
