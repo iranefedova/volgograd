@@ -241,3 +241,17 @@ ul.accordion-menu{
      </ul>
  </li>
 </ul>*/
+
+/*---SELECTOR---*/
+
+.selector {
+    -moz-appearance: none;
+    background-image: url("/images/select.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 38px 100%;
+    border: 2px solid #dadfe6;
+    cursor: pointer;
+    padding: 10px 49px 10px 6px;
+/*    width: 284px;*/
+}
