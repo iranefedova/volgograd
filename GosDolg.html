@@ -84,47 +84,37 @@
                            <span class="path__link">Главная</span>
                        </a>
                        <span>/</span>
-                       <span class="gray-text">Государственные программы</span>
+                       <span class="gray-text">Государственный долг</span>
                    </div>
 
-                   <h1 class="page__name">Государственные программы</h1>
+                   <h1 class="page__name">Государственный долг</h1>
 
                    <link href="/style/components/map.css" rel="stylesheet" />
                    <link href="/style/components/UI.css" rel="stylesheet" />
 
                    <div class="shadow-block">
-                        <h3 class="page__title">Государственные программы Волгоградской области по % исполнения на 01.06.2017</h3>
-                           <div class="page__ui">
-                               <span class="date page__subtitle">Данные на 01.06.2017</span>
-                               <div class="diagram__toggle">
-                                   <div class="switch">
-                                       <input id="toggle-on1" class="toggle toggle-left" name="toggle1" value="false" type="radio" checked>
-                                       <label for="toggle-on1" class="switch__btn">Диаграмма</label>
-                                       <input id="toggle-off1" class="toggle toggle-right" name="toggle1" value="true" type="radio">
-                                       <label for="toggle-off1" class="switch__btn">Таблица</label>
-                                   </div>
-                                   <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
-                              </div>
-                           </div>
+                       <span>Государственный долг - долговые обязательства Волгоградской области перед федеральным
+                       бюджетом и банками, направленные в том числе на покрытие дефицита бюджета.</span>
+                       <p class="marg-t"><span>Виды государственного долга:</span></p>
+                       <p><span>Кредиты банков - денежная сумма, взятая в банке под проценты на определенный срок.</span></p>
+                       <p><span>Кредиты из федерального бюджета - денежная сумма, взятая в федеральном бюджете на определенный срок под очень низкие проценты .</span></p>
+                       <h3 class="page__title marg-t">Государственный долг - 1134 млн. руб.</h3>
+                       <h3 class="page__title big-marg-t">Динамика государственного долга и доходов без учета объема безвозмездных поступлений на 01.06.2017</h3>
+                       <span class="date page__subtitle">Данные на 01.06.2017</span>
+                       <div class="page__ui">
+                           <input type="date" class="marg-r"/> <!-- Сюда прикрутить красивый календарь -->
+                           <div class="diagram__toggle">
+                               <div class="switch">
+                                   <input id="toggle-on1" class="toggle toggle-left" name="toggle1" value="false" type="radio" checked>
+                                   <label for="toggle-on1" class="switch__btn">Динамика</label>
+                                   <input id="toggle-off1" class="toggle toggle-right" name="toggle1" value="true" type="radio">
+                                   <label for="toggle-off1" class="switch__btn">Таблица</label>
+                               </div>
+                               <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
+                          </div>
+                      </div>
 
-                        <input type="date" class="marg-r"/> <!-- Сюда прикрутить красивый календарь -->
-                        <div class="selector page-subtitle">
-                          <select name="finance-sources" id="finance-sources" size="1" class="selector-input">
-                            <option selected>Источник финансирования</option>
-                          </select>
-                          <div class="selector-btn"></div>
-                       </div>
-
-
-
-                        <div class="switch marg-t">
-                            <input id="toggle-on2" class="toggle toggle-left" name="toggle2" value="false" type="radio" checked>
-                            <label for="toggle-on2" class="switch__btn">По % исполнения</label>
-                            <input id="toggle-off2" class="toggle toggle-right" name="toggle2" value="true" type="radio">
-                            <label for="toggle-off2" class="switch__btn">По объему финансирования</label>
-                        </div>
-
-                        <div class="diagram marg-t"></div>
+                      <div class="diagram marg-t"></div>
                    </div>
 
                    <div class="shadow-block big-marg-t">

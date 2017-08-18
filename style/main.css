@@ -435,7 +435,7 @@ a:active {
 		z-index: 0;
 }
 
-.page__content{
+.page__ui{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
