@@ -32,3 +32,17 @@ p.date {
 .news-header:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+.kek img {
+    flex-shrink: 0;
+}
+
+.kek {
+    flex-shrink: 0;
+    max-width: 30%;
+}
