@@ -413,10 +413,14 @@ a:active {
 		text-decoration: underline;
 }
 
+.gray-text{
+		color: #919599;
+		font-size: 14px;
+}
 .path__current, .date, .page__subtitle{
-	color: #919599;
-	font-size: 14px;
-	margin-bottom: 10px;
+		color: #919599;
+		font-size: 14px;
+		margin-bottom: 10px;
 }
 
 .date, .page__subtitle{

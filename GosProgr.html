@@ -84,7 +84,7 @@
                            <span class="path__link">Главная</span>
                        </a>
                        <span>/</span>
-                       <span class="path__current">Государственные программы</span>
+                       <span class="gray-text">Государственные программы</span>
                    </div>
 
                    <h1 class="page__name">Государственные программы</h1>
@@ -108,14 +108,14 @@
                            </div>
 
                         <input type="date" class="marg-r"/> <!-- Сюда прикрутить красивый календарь -->
-                        <div class="selector">
-                          <select name="finance-sources" id="finance-sources" size="1" class="selector-input"></select>
+                        <div class="selector page-subtitle">
+                          <select name="finance-sources" id="finance-sources" size="1" class="selector-input">
+                            <option selected>Источник финансирования</option>
+                          </select>
                           <div class="selector-btn"></div>
                        </div>
 
-                       <script>
-                         
-                       </script>
+
 
                         <div class="switch marg-t">
                             <input id="toggle-on2" class="toggle toggle-left" name="toggle2" value="false" type="radio" checked>
@@ -267,6 +267,12 @@
     <script src="https://ruseller.com/lessons/les2479/demo/js/main.js"></script>
     <script src="/libs/jquery.touchSwipe.min.js"></script>
     <script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
+
+    <script type="text/javascript">
+      // $( ".selector-btn" ).click(function() {
+      //   $( ".selector-input" ).slideUp();
+      // });
+    </script>
 
     <script>
         if ($(window).width() < '1771') {

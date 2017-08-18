@@ -258,17 +258,18 @@ ul.accordion-menu{
 }
 
 .selector-btn{
-    /*background-image: url("/images/select.png");
-    background-position: right top;
-    background-repeat: no-repeat;*/
+    background-image: url("/images/select_arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
     width: 37px;
     height: 37px;
     background-color: #f6bd68;
     margin-top: 2px;
     margin-left: -39px;
     z-index: 1;
+    pointer-events:none
 }
 
-.selector-btn:active{
-
+.selector-input:active ~ .selector-btn{
+    background-color: #fec570;
 }
