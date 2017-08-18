@@ -245,13 +245,30 @@ ul.accordion-menu{
 /*---SELECTOR---*/
 
 .selector {
+    display: inline-flex;
+}
+.selector-input {
+    z-index: 0;
     -moz-appearance: none;
-    background-image: url("/images/select.jpg");
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: 38px 100%;
+    background-color: #ffffff;
     border: 2px solid #dadfe6;
     cursor: pointer;
     padding: 10px 49px 10px 6px;
 /*    width: 284px;*/
+}
+
+.selector-btn{
+    /*background-image: url("/images/select.png");
+    background-position: right top;
+    background-repeat: no-repeat;*/
+    width: 37px;
+    height: 37px;
+    background-color: #f6bd68;
+    margin-top: 2px;
+    margin-left: -39px;
+    z-index: 1;
+}
+
+.selector-btn:active{
+
 }
