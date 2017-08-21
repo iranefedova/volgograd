@@ -1,6 +1,6 @@
 .news-item {
     margin-right: 20px;
-    flex-basis: 25%;
+    flex-basis: 23%;
 }
 
 .news-image {
@@ -14,7 +14,7 @@
     flex-shrink: 0;
 }
 
-.news-item:last-child {
+.news-item:nth-child(4n+4) {
     margin-right: 0;
 }
 
@@ -31,4 +31,18 @@ p.date {
 
 .news-header:hover {
     text-decoration: underline;
+}
+
+
+
+
+
+
+.kek img {
+    flex-shrink: 0;
+}
+
+.kek {
+    flex-shrink: 0;
+    max-width: 30%;
 }
