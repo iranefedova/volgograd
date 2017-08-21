@@ -257,19 +257,19 @@ ul.accordion-menu{
     background-color: #ffffff;
     border: 2px solid #dadfe6;
     cursor: pointer;
-    padding: 10px 49px 10px 6px;
-    height: 40px;
+    padding: 0 49px 0 6px;
+    height: 36px;
 }
 
 .selector-btn{
     background-image: url("/images/select_arrow.png");
     background-position: center;
     background-repeat: no-repeat;
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     background-color: #f6bd68;
     margin-top: 2px;
-    margin-left: -38px;
+    margin-left: -34px;
     z-index: 1;
     pointer-events:none
 }
@@ -438,12 +438,17 @@ ul.accordion-menu{
 /*---DATE FORM---*/
 
 .dateform{
-    height: 36px;
+    height: 32px;
     border: 2px solid #dadfe6;
     color: #323232;
     padding: 0 38px 0 6px;
     background-image: url(/images/datepicker.png);
     background-position: right top;
     background-repeat: no-repeat;
-    background-size: 38px 100%;
+    background-size: 34px 100%;
+}
+
+
+.icon-document{
+    width: 45px;
 }

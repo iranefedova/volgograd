@@ -156,6 +156,17 @@ a:active {
     text-decoration: none;
 }
 
+.page__docs{
+		display: flex;
+		font-size: 12px;
+		line-height: 1.25;
+		color: #919599;
+}
+.page__docs a{
+		font-size: 16px;
+		text-decoration: underline;
+}
+
 .header {
     height: 50px;
     background: #dadfe6;
@@ -415,7 +426,6 @@ a:active {
 
 .gray-text{
 		color: #919599;
-		font-size: 14px;
 }
 .path__current, .date, .page__subtitle{
 		color: #919599;
@@ -442,7 +452,8 @@ a:active {
 }
 
 .diagram__toggle{
-		display: flex;
+		display: inline-flex;
+		align-items: center;
 }
 
 .diagram{
