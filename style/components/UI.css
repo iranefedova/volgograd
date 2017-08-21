@@ -151,11 +151,11 @@
     border-collapse: collapse;
 }
 
-.table tr:hover{
+.table__custom tr:hover{
   background: #ebebeb;
 }
 
-.table tr td:first-child{
+.table__custom tr td:first-child{
     text-align: left;
     padding-left: 20px;
 }
@@ -189,6 +189,14 @@
 .table .cell-year{
     min-width: 180px;
     border-bottom: 1px solid #479fdf;
+}
+
+.table__custom .green{
+    background-color: #deffe3;
+}
+
+.table__custom .red{
+    background-color: #ffdede;
 }
 
 /*---ACCORDION---*/
