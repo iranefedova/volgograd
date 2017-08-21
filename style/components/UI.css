@@ -278,6 +278,7 @@ ul.accordion-menu{
 
 .pagination {
     list-style: none;
+    width: 100%;
 }
 
 .pagination,
