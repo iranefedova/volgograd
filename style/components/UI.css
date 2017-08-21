@@ -3,6 +3,8 @@
 .switch {
   overflow: hidden;
   max-width: max-content;
+  max-width: -moz-max-content;
+  color: #323232;
 	border: 2px solid #dadfe6;
 	border-radius: 10px;
 }
@@ -76,7 +78,7 @@
 
 .tabs {
     display: flex;
-    color: #000000;
+    color: #323232;
 }
 
 .tabs label {
@@ -142,6 +144,7 @@
 /*---TABLE---*/
 
 .table {
+    color: #323232;
     background: #ffffff;
     border: 1px solid #a8b3c4;
     border-spacing: 0;
@@ -250,22 +253,23 @@ ul.accordion-menu{
 .selector-input {
     z-index: 0;
     -moz-appearance: none;
+    color: #323232;
     background-color: #ffffff;
     border: 2px solid #dadfe6;
     cursor: pointer;
     padding: 10px 49px 10px 6px;
-/*    width: 284px;*/
+    height: 40px;
 }
 
 .selector-btn{
     background-image: url("/images/select_arrow.png");
     background-position: center;
     background-repeat: no-repeat;
-    width: 37px;
-    height: 37px;
+    width: 36px;
+    height: 36px;
     background-color: #f6bd68;
     margin-top: 2px;
-    margin-left: -39px;
+    margin-left: -38px;
     z-index: 1;
     pointer-events:none
 }
@@ -429,4 +433,17 @@ ul.accordion-menu{
 
     }
 
+}
+
+/*---DATE FORM---*/
+
+.dateform{
+    height: 36px;
+    border: 2px solid #dadfe6;
+    color: #323232;
+    padding: 0 38px 0 6px;
+    background-image: url(/images/datepicker.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 38px 100%;
 }
