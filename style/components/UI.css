@@ -149,6 +149,7 @@
     border: 1px solid #a8b3c4;
     border-spacing: 0;
     border-collapse: collapse;
+    min-width: 100%;
 }
 
 .table__custom tr:hover{
@@ -197,6 +198,13 @@
 
 .table__custom .red{
     background-color: #ffdede;
+}
+
+.table__measure{
+    text-align: right;
+    color: #919599;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 /*---ACCORDION---*/
