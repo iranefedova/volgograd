@@ -60,7 +60,7 @@ h1 {
     font-family: 'Proxima Nova';
     font-size: 24px;
     color: #323232;
-    line-height: 20px;
+    line-height: 28px;
     margin: 0;
     padding: 0;
 }
@@ -406,7 +406,6 @@ a:active {
 .shadow-block {
     box-shadow: 0 2px 5px 2px #d6d6d6;
     background-color: #fff;
-    padding: 25px;
     padding: 25px;
 }
 
