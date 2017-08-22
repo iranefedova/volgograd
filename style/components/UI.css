@@ -146,13 +146,13 @@
 .tableDiv {
     border-left: 1px solid #a8b3c4;
     border-right: 1px solid #a8b3c4;
+    max-height: 90vh;
 }
 
 .table {
     color: #323232;
     background: #ffffff;
     border-spacing: 0;
-    border-collapse: collapse;
     min-width: 100%;
 }
 
@@ -198,14 +198,18 @@
     border-bottom: 1px solid #a8b3c4;
 }
 
-.table td:last-child, .table th:last-child {
+.table td:last-child, .table tr:first-child th:last-child {
     border-right: none;
 }
 
 
-.table .cell-scrollable{
+.table .cell-scrollable {
     min-width: 280px;
     box-shadow: 0 -1px #555960;
+}
+
+.table .cell-docs {
+    min-width: 220px;
 }
 
 .table .cell-year{
@@ -226,6 +230,15 @@
     color: #919599;
     font-size: 14px;
     margin-top: 5px;
+}
+
+.arrow-grey {
+    font-size: 26px;
+    color: #c3c3c3;
+}
+
+.arrow-grey ~ p {
+    margin: 0;
 }
 
 /*---ACCORDION---*/
@@ -484,11 +497,6 @@ ul.accordion-menu{
     background-repeat: no-repeat;
     background-size: contain;
     max-width: 120px;
-}
-
-
-.icon-document{
-    width: 45px;
 }
 
 ul.list-grey {
