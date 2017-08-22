@@ -464,13 +464,22 @@ ul.accordion-menu{
     height: 32px;
     border: 2px solid #dadfe6;
     color: #323232;
-    padding: 0 38px 0 6px;
-    background-image: url(/images/datepicker.png);
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: 34px 100%;
+    padding: 0 0 0 6px;
 }
 
+.dateform_img_display{
+    display: none;
+}
+
+.dateform_img{
+    opacity: 1;
+    right: 54px;
+    top: 12px;
+    position: relative;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+}
 
 .icon-document{
     width: 45px;
