@@ -98,28 +98,28 @@
                        <h4>Динамика объемов и удельного веса расходов социальной сферы на 01.06.2017 </h4>
                        <span class="date page__subtitle">Данные на 01.06.2017</span>
                          <div class="page__row">
-                                <div class="diagram__toggle">
-                                    <input type="text" class="dateform marg-r" value="Дата"/> <!-- Календарь -->
-                                    <div class="switch marg-r">
+                                <div class="diagram__toggle flex-wrap marg-r">
+                                    <input type="text" class="dateform marg-r small-marg-t" value="Дата"/> <!-- Календарь -->
+                                    <div class="switch marg-r small-marg-t">
                                        <input id="toggle-on2" class="toggle toggle-left" name="toggle2" value="false" type="radio" checked>
                                        <label for="toggle-on2" class="switch__btn">План</label>
                                        <input id="toggle-off2" class="toggle toggle-right" name="toggle2" value="true" type="radio">
                                        <label for="toggle-off2" class="switch__btn">Факт</label>
                                    </div>
-                                    <div class="selector page-subtitle marg-r">
+                                    <div class="selector page-subtitle marg-r small-marg-t">
                                       <select name="finance-sources" id="finance-sources" size="1" class="selector-input">
                                         <option selected>Раздел</option>
                                       </select>
                                       <div class="selector-btn"></div>
                                    </div>
-                                   <div class="selector page-subtitle">
+                                   <div class="selector page-subtitle small-marg-t">
                                       <select name="finance-sources" id="finance-sources" size="1" class="selector-input">
                                         <option selected>Подраздел</option>
                                       </select>
                                       <div class="selector-btn"></div>
                                    </div>
                                 </div>
-                               <div class="diagram__toggle">
+                               <div class="diagram__toggle small-marg-t">
                                    <div class="switch">
                                        <input id="toggle-on1" class="toggle toggle-left" name="toggle1" value="false" type="radio" checked>
                                        <label for="toggle-on1" class="switch__btn">Динамика</label>
@@ -130,6 +130,21 @@
                               </div>
                            </div>
                        <img src="../images/diagram/social-politics-1.png" class="marg-t">
+                   </div>
+                   
+                   <div class="shadow-block marg-t">
+                       <h3 class="page__title">Объем и структура расходов по основным отраслям социальной сферы на 2017 год</h3>
+                       <span class="date page__subtitle">Данные на 01.06.2017</span>
+                       <div class="page__row">
+                            <div class="selector page-subtitle marg-r">
+                                <select name="finance-sources" id="finance-sources" size="1" class="selector-input">
+                                    <option selected>Год: 2017</option>
+                                </select>
+                                <div class="selector-btn"></div>
+                                </div>
+                        </div>
+                        <img src="../images/diagram/social-politics-2.png" class="marg-t">
+                        
                    </div>
                    
                    <div class="shadow-block marg-t">
@@ -152,7 +167,50 @@
                                    <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
                               </div>
                         </div>
-                        
+                        <div class="tableDiv marg-t">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Наименование показателя</th>
+                                        <th>План, млн. руб.</th>
+                                        <th>Факт, млн. руб.</th>
+                                        <th>% исполнения</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ежемесячное пособие на ребенка</td>
+                                        <td>2 534</td>
+                                        <td>2 434</td>
+                                        <td>
+                                            <div class="progress-bar">
+                                              <div class="progress-bar__line" style="width:50%">50%</div>
+                                             </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ежемесячные денежные выплаты ветеранам труда</td>
+                                        <td>1 100</td>
+                                        <td>1 000</td>
+                                        <td>
+                                            <div class="progress-bar">
+                                              <div class="progress-bar__line" style="width:73%">73%</div>
+                                             </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ежемесячные денежные выплаты труженникам тыла</td>
+                                        <td>1 434</td>
+                                        <td>1 200</td>
+                                        <td>
+                                            <div class="progress-bar">
+                                              <div class="progress-bar__line" style="width:90%">90%</div>
+                                             </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         
                    </div>
 
