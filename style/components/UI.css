@@ -149,18 +149,21 @@
     border: 1px solid #a8b3c4;
     border-spacing: 0;
     border-collapse: collapse;
+    min-width: 100%;
 }
 
+<<<<<<< HEAD
 .small-table tbody {
     font-size: 13px !important;
     line-height: 16px;
 }
 
-.table tr:hover{
+.table__custom tr:hover{
+>>>>>>> 1cf6182871df99bb15abcad6ee0c6a265bf57add
   background: #ebebeb;
 }
 
-.table tr td:first-child{
+.table__custom tr td:first-child{
     text-align: left;
     padding-left: 20px;
 }
@@ -194,6 +197,21 @@
 .table .cell-year{
     min-width: 180px;
     border-bottom: 1px solid #479fdf;
+}
+
+.table__custom .green{
+    background-color: #deffe3;
+}
+
+.table__custom .red{
+    background-color: #ffdede;
+}
+
+.table__measure{
+    text-align: right;
+    color: #919599;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 /*---ACCORDION---*/
