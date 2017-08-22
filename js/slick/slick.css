@@ -168,6 +168,14 @@
     line-height: 100px;
 }
 
+.circle-image-small ~ p > a {
+    color: #323232 !important;
+}
+
+.circle-image-small ~ p > a:hover {
+    color: #007dd5 !important;
+}
+
 .circle-image-small img {
     vertical-align: middle;
     padding-top: 0 !important;
