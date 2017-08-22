@@ -157,9 +157,8 @@ a:active {
 }
 
 .page__docs{
-		display: flex;
 		font-size: 13px;
-		line-height: 1.25;
+		line-height: 1.3;
 		color: #919599;
 }
 .page__docs a{
