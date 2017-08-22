@@ -143,23 +143,25 @@
 
 /*---TABLE---*/
 
+.tableDiv {
+    border-left: 1px solid #a8b3c4;
+    border-right: 1px solid #a8b3c4;
+}
+
 .table {
     color: #323232;
     background: #ffffff;
-    border: 1px solid #a8b3c4;
     border-spacing: 0;
     border-collapse: collapse;
     min-width: 100%;
 }
 
-<<<<<<< HEAD
 .small-table tbody {
     font-size: 13px !important;
     line-height: 16px;
 }
 
 .table__custom tr:hover{
->>>>>>> 1cf6182871df99bb15abcad6ee0c6a265bf57add
   background: #ebebeb;
 }
 
@@ -176,22 +178,34 @@
 .table th{
     color: #ffffff;
     background-color: #037cd3;
-    border-left: 1px solid #479fdf;
-    /*border-bottom: 1px solid #479fdf; //Нижняя граница заголовков*/
+    border-right: 1px solid #479fdf;
+    border-bottom: 1px solid #479fdf;
 }
 
-.table th:first-child {
-    border-left: 1px solid #a8b3c4;
+.table tr:first-child th:first-child, .table tr td:first-child {
+    border-right: none;
+    box-shadow:  2px 2px 5px 0px rgba(168,179,196,1);
+    text-align: left;
 }
+
+.table tr:first-child th:first-child {
+    text-align: center;
+}
+
 
 .table td{
-    border-left: 1px solid #a8b3c4;
+    border-right: 1px solid #a8b3c4;
     border-bottom: 1px solid #a8b3c4;
 }
 
+.table td:last-child, .table th:last-child {
+    border-right: none;
+}
+
+
 .table .cell-scrollable{
     min-width: 280px;
-    box-shadow: inset 0 -1px #555960;
+    box-shadow: 0 -1px #555960;
 }
 
 .table .cell-year{
