@@ -3,15 +3,6 @@
     background-size: cover;
 }
 
-.p-header {
-    color: #919090;
-    margin-bottom: 2px;
-}
-
-.p-body {
-    margin: 0;
-}
-
 .map > .info {
     flex: 0.9;
     align-self: flex-start;

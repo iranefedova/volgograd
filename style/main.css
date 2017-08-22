@@ -229,12 +229,26 @@ a:active {
     flex-basis: 33%;
 }
 
+.flex-4-col {
+    flex-basis: 25%;
+}
+
 .picture-link {
     display: block;
 }
 
 .upper {
     text-transform: uppercase;
+}
+
+.p-header {
+    color: #919090;
+    margin-bottom: 2px;
+    padding-right: 5px;
+}
+
+.p-body {
+    margin: 0;
 }
 
 .text-right {
