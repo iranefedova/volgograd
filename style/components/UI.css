@@ -475,3 +475,21 @@ ul.accordion-menu{
 .icon-document{
     width: 45px;
 }
+
+ul.list-grey {
+    list-style: none;
+}
+
+ul.list-grey > li{
+    position: relative;
+    padding-left: 20px;
+}
+ul.list-grey > li:before{
+    content: '';
+    position: absolute; top: 50%; left: 0;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    border-radius: 50%;
+    background: #dadfe6;
+}
