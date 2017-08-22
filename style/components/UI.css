@@ -151,6 +151,11 @@
     border-collapse: collapse;
 }
 
+.small-table tbody {
+    font-size: 13px !important;
+    line-height: 16px;
+}
+
 .table tr:hover{
   background: #ebebeb;
 }
