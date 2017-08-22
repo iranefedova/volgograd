@@ -8,14 +8,11 @@
     <meta http-equiv="x-rim-auto-match" content="none">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    	
     <link rel="shortcut icon" href="favicon.png" />
     <link href="/style/main.css" rel="stylesheet" />
     <link href="/style/media.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="/libs/responsive-tables/responsive-tables.css">
-
-    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>-->
-
+    
 </head>
 
 <body>
@@ -151,7 +148,7 @@
                        </div>
                        
                        <div class="tableDiv">
-                           <table class="table marg-t small-table">
+                           <table id="fixTable" class="table marg-t small-table">
                            <thead>
                                <tr>
                                <th rowspan="2" class="cell-scrollable">Направления и проекты</th>
@@ -194,11 +191,6 @@
                        
                    </div>
 
-                   
-
-                   
-
-                   
 
                    <div class="shadow-block big-marg-t">
                      <h3 class="page__title marg-t">Документы</h3>
@@ -275,6 +267,13 @@
               }
             });
         }
+    </script>
+    
+    <script src="../js/tableHeadFixer.js"></script>
+    <script>
+			$(document).ready(function() {
+				$("#fixTable").tableHeadFixer({"head" : false, "left" : 1}); 
+			});
     </script>
 
 </body>
