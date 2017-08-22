@@ -298,6 +298,10 @@ a:active {
     margin-right: 10px;
 }
 
+.small-marg-t {
+    margin-top: 10px;
+}
+
 .logo {
     padding-right: 15px;
     border-right: #c0c7d2 2px solid;
