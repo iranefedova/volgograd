@@ -468,7 +468,8 @@ ul.accordion-menu{
     background-image: url(/images/datepicker.png);
     background-position: right top;
     background-repeat: no-repeat;
-    background-size: 34px 100%;
+    background-size: contain;
+    max-width: 120px;
 }
 
 
