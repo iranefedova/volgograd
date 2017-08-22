@@ -225,6 +225,10 @@ a:active {
 	justify-content: space-around;
 }
 
+.flex-3-col {
+    flex-basis: 33%;
+}
+
 .picture-link {
     display: block;
 }

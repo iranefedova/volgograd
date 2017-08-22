@@ -159,11 +159,24 @@
     height: 120px;
     width: 120px;
     box-shadow: 0 2px 5px 2px #d6d6d6;
+    flex-shrink: 0;
+}
+
+.circle-image-small {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+}
+
+.circle-image-small img {
+    vertical-align: middle;
+    padding-top: 0 !important;
 }
 
 .circle-image img {
     display: inline;
     padding-top: 18px;
+    max-width: 80%;
 }
 
 .slide {
