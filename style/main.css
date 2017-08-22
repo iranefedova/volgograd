@@ -426,6 +426,15 @@ a:active {
     padding: 25px;
 }
 
+.shadow-block-small {
+    padding: 15px !important;
+    margin-right: 20px;
+}
+
+.shadow-block-small:nth-child(3n+3) {
+    margin-right: 0;
+}
+
 .footer {
 	height: 250px;
 	background:url("/images/footerbackground.png");
