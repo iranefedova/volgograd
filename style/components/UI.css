@@ -241,7 +241,7 @@
 /*---ACCORDION---*/
 
 ul.accordion-menu{
-  margin: 0;
+  margin-left: 0;
 }
 
 .accordion-menu ul {
@@ -259,12 +259,13 @@ ul.accordion-menu{
 	position: absolute;
 	opacity: 0;
 }
-.accordion-menu label, .accordion-menu a {
+.accordion-menu label{
 	position: relative;
-	display: block;
-	padding: 10px 10px 10px 64px;
+	display: flex;
+  align-items: center;
+	padding: 10px 10px 10px 10px;
 	background: #ffffff;
-	box-shadow: inset 0 -1px #555960;
+  border: 1px solid #dadfe6;
 	color: #000000;
 }
 
