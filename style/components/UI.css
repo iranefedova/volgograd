@@ -170,6 +170,8 @@
 .table__custom tr td:first-child{
     text-align: left;
     padding-left: 20px;
+    box-shadow:  inset -5px 0px 5px -2px rgba(214,220,228,1);
+    text-align: left;
 }
 
 .table th, td{
@@ -182,12 +184,6 @@
     background-color: #037cd3;
     border-right: 1px solid #479fdf;
     border-bottom: 1px solid #479fdf;
-}
-
-.table__custom tr:first-child, .table__custom tr td:first-child {
-    border-right: none;
-    box-shadow:  2px 0px 5px 0px rgba(168,179,196,1);
-    text-align: left;
 }
 
 .table tr:first-child th:first-child {
@@ -207,7 +203,6 @@
 
 .table .cell-scrollable {
     min-width: 280px;
-    box-shadow: 0 -1px #555960;
 }
 
 .table .cell-docs {
