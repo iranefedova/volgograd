@@ -13,8 +13,8 @@
     <link href="/style/main.css" rel="stylesheet" />
     <link href="/style/media.css" rel="stylesheet"/>
     <link href="/style/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick-theme.css">
 
     <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>-->
 
@@ -97,27 +97,33 @@
                    <link href="/style/components/UI.css" rel="stylesheet" />
 
                    <div class="shadow-block">
-                       <span style="font-size: 16px">26 июня 2017 Аналитическое Кредитное Рейтинговое Агенство (АКРА) присвоило
+                       <span class="f16">26 июня 2017 Аналитическое Кредитное Рейтинговое Агенство (АКРА) присвоило
                          Волгоградской облатсти кредитный рейтинг BBB-(RU), прогноз "Стабильный".</span>
                        <p class="marg-t"><h4>Наличие кредитных рейтингов у Волгоградской области</h4></p>
-                       <table class="table marg-t">
-                         <tr>
-                           <th>Долгосрочный рейтинг в иностранной валюте</th>
-                           <th>Долгосрочный рейтинг в национальной валюте</th>
-                           <th>Прогноз</th>
-                           <th>Краткосрочный рейтинг в иностранной валюте</th>
-                           <th>Рейтинг по национальной шкале</th>
-                           <th>Прогноз по рейтингу по национальной валюте</th>
-                         </tr>
-                         <tr>
-                           <td>B+</td>
-                           <td>B+</td>
-                           <td>Стабильный</td>
-                           <td>B</td>
-                           <td>A(rus)</td>
-                           <td>Стабильный</td>
-                         </tr>
-                       </table>
+                       <div class="tableDiv">
+                         <table class="table marg-t">
+                           <thead>
+                             <tr>
+                               <th>Долгосрочный рейтинг в иностранной валюте</th>
+                               <th>Долгосрочный рейтинг в национальной валюте</th>
+                               <th>Прогноз</th>
+                               <th>Краткосрочный рейтинг в иностранной валюте</th>
+                               <th>Рейтинг по национальной шкале</th>
+                               <th>Прогноз по рейтингу по национальной валюте</th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                             <tr>
+                               <td>B+</td>
+                               <td>B+</td>
+                               <td>Стабильный</td>
+                               <td>B</td>
+                               <td>A(rus)</td>
+                               <td>Стабильный</td>
+                             </tr>
+                           </tbody>
+                         </table>
+                       </div>
                        <p class="marg-t"><strong>"B"</strong> - в значительной степени спекулятивный рейтинг</p>
                        <p class="marg-t">В отношении эмитентов и ценных бумаг, обязательства по которым выполняются, рейтинги уровня "B" обозначают наличие значительных
                          кредитных рисков, однако при этом остается ограниченная "подушка безопасности". На данный момент финансовые обязательства выполняются,
@@ -134,27 +140,33 @@
                        <p class="marg-t">Прогноз по кредитному рейтингу "Стабильный" - предполагает с наиболее высокой долей вероятности неизменность рейтинга.
                          Рейтинги могут быть дополнены знаком "+" или "-" для обозначения относительного положения в рамках основных рейтинговых категорий.
                        </p>
-                       <table class="table marg-t">
-                         <tr>
-                           <th>Категория</th>
-                           <th>Рейтинг</th>
-                           <th>Описание</th>
-                         </tr>
-                         <tr>
-                           <td rowspan="3">BBB</td>
-                           <td>BBB+(RU)</td>
-                           <td rowspan="3">Умеренный уровень кредитоспособности по сравнению с другими рейтингуемыми лицами, выпусками ценных бумаг или
-                             финансовыми обязательствами в Российской Федерации, при этом присутствует более высокая чувствительность к
-                             воздействию неблагоприятных перемен в коммерческих, финансовых и экономических условиях в Российской Федерации.
-                           </td>
-                         </tr>
-                         <tr>
-                           <td>BBB(RU)</td>
-                         </tr>
-                         <tr>
-                           <td>BBB-(RU)</td>
-                         </tr>
-                       </table>
+                       <div class="tableDiv">
+                         <table class="table marg-t">
+                           <thead>
+                             <tr>
+                               <th>Категория</th>
+                               <th>Рейтинг</th>
+                               <th>Описание</th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                             <tr>
+                               <td rowspan="3">BBB</td>
+                               <td>BBB+(RU)</td>
+                               <td rowspan="3">Умеренный уровень кредитоспособности по сравнению с другими рейтингуемыми лицами, выпусками ценных бумаг или
+                                 финансовыми обязательствами в Российской Федерации, при этом присутствует более высокая чувствительность к
+                                 воздействию неблагоприятных перемен в коммерческих, финансовых и экономических условиях в Российской Федерации.
+                               </td>
+                             </tr>
+                             <tr>
+                               <td style="border-right: 1px solid #a8b3c4;">BBB(RU)</td>
+                             </tr>
+                             <tr>
+                               <td style="border-right: 1px solid #a8b3c4;">BBB-(RU)</td>
+                             </tr>
+                           </tbody>
+                         </table>
+                       </div>
                        <div class="selector marg-t">
                          <select name="" id="" size="1" class="selector-input">
                            <option selected>2017</option>
@@ -173,19 +185,25 @@
                       </div>
                    </div>
 
-                   <div class="container flex flex-between marg-t big-marg-b f16 upper">
-                     <div class="shadow-block flex page__block marg-r">
-                       <img class="marg-r" src="/images/carousel/dva4.png" alt="">
-                       <a href="#">Аналитическое кредитное рейтинговое агенство</a></span>
-                     </div>
-                     <div class="shadow-block flex page__block marg-r">
-                       <img class="marg-r" src="/images/carousel/dva1.png" alt="">
-                       <a href="">Ссылка 2</a>
-                     </div>
-                     <div class="shadow-block flex page__block">
-                       <img class="marg-r" src="/images/carousel/dva2.png" alt="">
-                       <a href="">Центральный банк РФ</a>
-                     </div>
+                   <div class="flex">
+                       <div class="shadow-block shadow-block-small flex-3-col flex flex-vertical marg-t">
+                           <div class="circle-image circle-image-small text-center marg-r">
+                             <img src="/images/carousel/dva4.png">
+                           </div>
+                           <p class="f16"><a href="#">Аналитическое кредитное рейтинговое агенство</a></p>
+                       </div>
+                       <div class="shadow-block shadow-block-small flex-3-col flex flex-vertical marg-t">
+                           <div class="circle-image circle-image-small text-center marg-r">
+                             <img src="/images/carousel/dva1.png">
+                           </div>
+                           <p class="f16"><a href="#">Ссылка 2</a></p>
+                       </div>
+                       <div class="shadow-block shadow-block-small flex-3-col flex flex-vertical marg-t">
+                           <div class="circle-image circle-image-small text-center marg-r">
+                             <img src="/images/carousel/dva2.png">
+                           </div>
+                           <p class="f16"><a href="#">Центральный банк РФ</a></p>
+                       </div>
                    </div>
 
             </div>

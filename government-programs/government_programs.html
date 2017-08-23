@@ -13,8 +13,8 @@
     <link href="/style/main.css" rel="stylesheet" />
     <link href="/style/media.css" rel="stylesheet"/>
     <link href="/style/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="/js/slick/slick-theme.css">
 
     <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>-->
 
@@ -127,7 +127,7 @@
 
                    <div class="shadow-block big-marg-t">
                        <h4 class="page__title">Параметры государственных программ Волгоградской области на 01.06.2017</h4>
-                       <span class="page__subtitle marg-t">Сортировка</span>
+                       <span class="page__subtitle">Сортировка</span>
                        <div class="switch marg-b">
                            <input id="toggle-on3" class="toggle toggle-left" name="toggle3" value="false" type="radio" checked>
                            <label for="toggle-on3" class="switch__btn">Ведомства</label>
@@ -145,85 +145,89 @@
                        </div>
                        <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
                      </div>
-                     <table class="table table__custom marg-t">
-                       <tr>
-                         <th class="cell-scrollable" rowspan="2">
-                           Наименование программы
-                         </th>
-                         <th rowspan="2">
-                           Период программы
-                         </th>
-                         <th rowspan="2">
-                           Общий объем финансирования
-                         </th>
-                         <th rowspan="2" style="min-width: 180px;">
-                           % исполнения ГП в текущем году
-                         </th>
-                         <th rowspan="2" style="font-size: 12px; line-height: initial; padding: 5px 10px 5px 10px;">
-                           % исполнения к аналогичному периоду предыдущего года
-                         </th>
-                         <th class="cell-year" colspan="2">2015</th>
-                       </tr>
-                       <tr>
-                         <th>План</th>
-                         <th>Факт</th>
-                       </tr>
-                       <tr>
-                         <td>
-                           <i class="fa fa-angle-right" aria-hidden="true"></i> Аккордеон 1
-                         </td>
-                         <td>2014-2017</td>
-                         <td>2 000 000</td>
-                         <td>
-                             <div class="progress-bar">
-                              <div class="progress-bar__line" style="width:50%">50%</div>
-                             </div>
-                         </td>
-                         <td>20%</td>
-                         <td>2 000 000</td>
-                         <td>2 000 000</td>
-                       </tr>
-                       <tr>
-                         <td><i class="fa fa-angle-right" aria-hidden="true"></i> ГП ВО "Защита населения и территории от чрезвычайных ситуаций, обеспечение пожарной безопасности</td>
-                         <td>2014-2016</td>
-                         <td>7 000 000</td>
-                         <td>
-                             <div class="progress-bar">
-                              <div class="progress-bar__line" style="width:70%">70%</div>
-                             </div>
-                         </td>
-                         <td>10%</td>
-                         <td>7 000 000</td>
-                         <td>7 000 000</td>
-                       </tr>
-                       <tr>
-                         <td style="padding-left: 40px;"><i class="fa fa-angle-right" aria-hidden="true"></i> Подпункт 1</td>
-                         <td></td>
-                         <td>7 000 000</td>
-                         <td>
-                             <div class="progress-bar">
-                              <div class="progress-bar__line" style="width:40%">40%</div>
-                             </div>
-                         </td>
-                         <td>20%</td>
-                         <td>7 000 000</td>
-                         <td>3 100 000</td>
-                       </tr>
-                       <tr>
-                         <td style="padding-left: 40px;">Мероприятие 1</td>
-                         <td></td>
-                         <td>520 000</td>
-                         <td>
-                             <div class="progress-bar">
-                              <div class="progress-bar__line" style="width:100%">100%</div>
-                             </div>
-                         </td>
-                         <td>10%</td>
-                         <td>520 000</td>
-                         <td>520 000</td>
-                       </tr>
-                     </table>
-                     <div>
+                     <div class="tableDiv">
+                       <table class="table table__custom marg-t">
+                         <thead>
+                           <tr>
+                             <th class="cell-scrollable" rowspan="2">
+                               Наименование программы
+                             </th>
+                             <th rowspan="2">
+                               Период программы
+                             </th>
+                             <th rowspan="2">
+                               Общий объем финансирования
+                             </th>
+                             <th rowspan="2" style="min-width: 180px;">
+                               % исполнения ГП в текущем году
+                             </th>
+                             <th rowspan="2" style="font-size: 12px; line-height: initial; padding: 5px 10px 5px 10px;">
+                               % исполнения к аналогичному периоду предыдущего года
+                             </th>
+                             <th class="cell-year" colspan="2">2015</th>
+                           </tr>
+                           <tr>
+                             <th>План</th>
+                             <th>Факт</th>
+                           </tr>
+                         </thead>
+                         <tbody>
+                           <tr>
+                             <td>
+                               <i class="fa fa-angle-right" aria-hidden="true"></i> Аккордеон 1
+                             </td>
+                             <td>2014-2017</td>
+                             <td>2 000 000</td>
+                             <td>
+                                 <div class="progress-bar">
+                                  <div class="progress-bar__line" style="width:50%">50%</div>
+                                 </div>
+                             </td>
+                             <td>20%</td>
+                             <td>2 000 000</td>
+                             <td>2 000 000</td>
+                           </tr>
+                           <tr>
+                             <td><i class="fa fa-angle-right" aria-hidden="true"></i> ГП ВО "Защита населения и территории от чрезвычайных ситуаций, обеспечение пожарной безопасности</td>
+                             <td>2014-2016</td>
+                             <td>7 000 000</td>
+                             <td>
+                                 <div class="progress-bar">
+                                  <div class="progress-bar__line" style="width:70%">70%</div>
+                                 </div>
+                             </td>
+                             <td>10%</td>
+                             <td>7 000 000</td>
+                             <td>7 000 000</td>
+                           </tr>
+                           <tr>
+                             <td style="padding-left: 40px;"><i class="fa fa-angle-right" aria-hidden="true"></i> Подпункт 1</td>
+                             <td></td>
+                             <td>7 000 000</td>
+                             <td>
+                                 <div class="progress-bar">
+                                  <div class="progress-bar__line" style="width:40%">40%</div>
+                                 </div>
+                             </td>
+                             <td>20%</td>
+                             <td>7 000 000</td>
+                             <td>3 100 000</td>
+                           </tr>
+                           <tr>
+                             <td style="padding-left: 40px;">Мероприятие 1</td>
+                             <td></td>
+                             <td>520 000</td>
+                             <td>
+                                 <div class="progress-bar">
+                                  <div class="progress-bar__line" style="width:100%">100%</div>
+                                 </div>
+                             </td>
+                             <td>10%</td>
+                             <td>520 000</td>
+                             <td>520 000</td>
+                           </tr>
+                         </tbody>
+                       </table>
                      </div>
                    </div>
 
