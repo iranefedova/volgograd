@@ -51,4 +51,8 @@
     .flex-4-col {
         flex-basis: 33% !important;
     }
+    
+    ul.projects p {
+        font-size: 16px !important;
+    }
 }

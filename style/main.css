@@ -20,6 +20,16 @@
 	font-weight: normal;
 }
 
+@font-face {
+	font-family: 'Proxima Nova Bold';
+	src: url('/fonts/Proxima_Nova/Proxima Nova Bold/Proxima Nova Bold.eot');
+	src: url('/fonts/Proxima_Nova/Proxima Nova Bold/Proxima Nova Bold.eot?#iefix')format('embedded-opentype'),
+	url('/fonts/Proxima_Nova/Proxima Nova Bold/Proxima Nova Bold.woff') format('woff'),
+	url('/fonts/Proxima_Nova/Proxima Nova Bold/Proxima Nova Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
 html,
 body {
     margin: 0;
@@ -206,6 +216,10 @@ a:active {
 
 .flex {
     display: flex !important;
+}
+
+.flex-inline {
+    display: inline-flex;
 }
 
 .flex-between {
