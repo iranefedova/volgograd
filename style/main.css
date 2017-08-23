@@ -157,9 +157,8 @@ a:active {
 }
 
 .page__docs{
-		display: flex;
 		font-size: 13px;
-		line-height: 1.25;
+		line-height: 1.3;
 		color: #919599;
 }
 .page__docs a{
@@ -178,6 +177,7 @@ a:active {
 
 .f16{
 	font-size: 16px;
+    color: #000;
 }
 
 .header {
@@ -224,6 +224,10 @@ a:active {
 
 .flex-around {
 	justify-content: space-around;
+}
+
+.flex-3-col {
+    flex-basis: 33%;
 }
 
 .picture-link {
