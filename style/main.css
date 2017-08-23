@@ -153,17 +153,28 @@ a {
 a:hover,
 a:active {
     color: #007dd5;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .page__docs{
 		font-size: 13px;
 		line-height: 1.3;
 		color: #919599;
+    text-align: left;
 }
+
 .page__docs a{
 		font-size: 16px;
 		text-decoration: underline;
+}
+
+.table .page__docs a {
+    font-size: 14px;
+}
+
+.icon-document{
+    width: 45px;
+    flex-shrink: 0.3;
 }
 
 .page__block{
@@ -230,12 +241,26 @@ a:active {
     flex-basis: 33%;
 }
 
+.flex-4-col {
+    flex-basis: 25%;
+}
+
 .picture-link {
     display: block;
 }
 
 .upper {
     text-transform: uppercase;
+}
+
+.p-header {
+    color: #919090;
+    margin-bottom: 2px;
+    padding-right: 5px;
+}
+
+.p-body {
+    margin: 0;
 }
 
 .text-right {
@@ -268,6 +293,14 @@ a:active {
 
 .big-marg-t {
     margin-top: 40px;
+}
+
+.small-marg-r {
+    margin-right: 10px;
+}
+
+.small-marg-t {
+    margin-top: 10px;
 }
 
 .logo {
@@ -413,6 +446,15 @@ a:active {
     padding: 25px;
 }
 
+.shadow-block-small {
+    padding: 15px !important;
+    margin-right: 20px;
+}
+
+.shadow-block-small:nth-child(3n+3) {
+    margin-right: 0;
+}
+
 .footer {
 	height: 250px;
 	background:url("/images/footerbackground.png");
@@ -435,43 +477,41 @@ a:active {
 }
 
 .path__link {
-		color: #5282c3;
-		font-size: 14px;
-		text-decoration: underline;
+    color: #5282c3;
+    font-size: 14px;
+    text-decoration: underline;
 }
 
 .gray-text{
-		color: #919599;
+    color: #919599;
 }
 .path__current, .date, .page__subtitle{
-		color: #919599;
-		font-size: 14px;
-		margin-bottom: 10px;
+    color: #919599;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .date, .page__subtitle{
-		display: block;
+    display: block;
 }
 
 .page__title{
-		margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .z3d{
-		z-index: 0;
+    z-index: 0;
 }
 
 .page__row{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .diagram__toggle{
-		display: inline-flex;
-		align-items: center;
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
 }
 
-.diagram{
-		height: 500px;
-}

@@ -84,114 +84,131 @@
                            <span class="path__link">Главная</span>
                        </a>
                        <span>/</span>
-                       <span class="gray-text">Государственный долг</span>
+                       <a href="/budget-execution/budget.html">
+                           <span class="path__link">Исполнение бюджета</span>
+                       </a>
+                       <span>/</span>
+                       <span class="gray-text">Расходы</span>
                    </div>
 
-                   <h1 class="page__name">Государственный долг</h1>
+                   <h1 class="page__name">Расходы</h1>
 
                    <link href="/style/components/map.css" rel="stylesheet" />
                    <link href="/style/components/UI.css" rel="stylesheet" />
 
                    <div class="shadow-block">
-                       <span>Государственный долг - долговые обязательства Волгоградской области перед федеральным
-                       бюджетом и банками, направленные в том числе на покрытие дефицита бюджета.</span>
-                       <p class="marg-t"><span>Виды государственного долга:</span></p>
-                       <p><span>Кредиты банков - денежная сумма, взятая в банке под проценты на определенный срок.</span></p>
-                       <p><span>Кредиты из федерального бюджета - денежная сумма, взятая в федеральном бюджете на определенный срок под очень низкие проценты .</span></p>
-                       <h3 class="page__title marg-t">Государственный долг - 1134 млн. руб.</h3>
-                       <h3 class="page__title big-marg-t">Динамика государственного долга и доходов без учета объема безвозмездных поступлений на 01.06.2017</h3>
-                       <span class="date page__subtitle">Данные на 01.06.2017</span>
-                       <div class="page__row">
-                           <input type="text" class="dateform marg-r" value="Дата"/> <!-- Сюда прикрутить красивый календарь -->
-                           <div class="diagram__toggle">
-                               <div class="switch">
-                                   <input id="toggle-on1" class="toggle toggle-left" name="toggle1" value="false" type="radio" checked>
-                                   <label for="toggle-on1" class="switch__btn">Динамика</label>
-                                   <input id="toggle-off1" class="toggle toggle-right" name="toggle1" value="true" type="radio">
-                                   <label for="toggle-off1" class="switch__btn">Таблица</label>
-                               </div>
-                               <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
-                          </div>
+                     <p><span>
+                       На странице приводятся показатели расходов бюджета за прошлые четыре года и за текущий финансовый год.
+                       Динамика приводится в разрезе выбранных показателей расходов бюджета. На круговой диаграмме игистограмме
+                       приводится сравнение показателей за прошлые два года и текущий финансовый год.
+                     </span></p>
+                     <p><span>
+                       Для показателей расходов бюджета доступен просмотр уровня бюджета: «Консолидированный бюджет»,
+                       «Областной бюджет» и период, за который выводятся показатели. Данные доступны за последние три года.
+                     </span></p>
+                     <h3 class="page__title marg-t">Всего расходов на 01.06.2017: 59 млн. руб.</h3>
+                     <div class="flex flex-vertical">
+                       <div class="selector page-subtitle marg-r">
+                         <select name="finance-sources" id="finance-sources" size="1" class="selector-input">
+                           <option selected>Областной бюджет</option>
+                         </select>
+                         <div class="selector-btn"></div>
                       </div>
-
-                      <img src="/diagrams/diagram2.png" alt="diagram2">
+                    </div>
+                    <h4 class="big-marg-t">Динамика расходов областного бюджета на 01.06.2017</h4>
+                    <span class="date page__subtitle marg-t">Данные на 01.06.2017</span>
+                    <div class="page__row">
+                      <input type="text" class="dateform marg-r" value="Выбор даты"/>
+                      <div class="diagram__toggle">
+                        <div class="switch">
+                            <input id="toggle-on1" class="toggle toggle-left" name="toggle1" value="false" type="radio" checked>
+                            <label for="toggle-on1" class="switch__btn">Динамика</label>
+                            <input id="toggle-off1" class="toggle toggle-right" name="toggle1" value="true" type="radio">
+                            <label for="toggle-off1" class="switch__btn">Таблица</label>
+                        </div>
+                        <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
+                      </div>
+                    </div>
+                    <img src="/diagrams/diagram9.png" alt="diagram9">
                    </div>
 
                    <div class="shadow-block big-marg-t">
-                       <h3 class="page__title">Объем и структура государственного долга на 01.06.2017</h3>
+                       <h4 class="page__title">Структура и объем расходов областного бюджета на 01.06.2017</h4>
                        <span class="date page__subtitle">Данные на 01.06.2017</span>
                        <div class="page__row marg-b">
                          <div class="diagram__toggle">
-                           <div class="switch marg-r">
-                               <input id="toggle-on3" class="toggle toggle-left" name="toggle3" value="false" type="radio" checked>
-                               <label for="toggle-on3" class="switch__btn">Месяц</label>
-                               <input id="toggle-off3" class="toggle toggle-right" name="toggle3" value="true" type="radio">
-                               <label for="toggle-off3" class="switch__btn">Квартал</label>
+                           <input type="text" class="dateform marg-r" value="01.06.2017"/>
+                           <div class="switch">
+                               <input id="toggle-on2" class="toggle toggle-left" name="toggle2" value="false" type="radio" checked>
+                               <label for="toggle-on2" class="switch__btn">План</label>
+                               <input id="toggle-off2" class="toggle toggle-right" name="toggle2" value="true" type="radio">
+                               <label for="toggle-off2" class="switch__btn">Факт</label>
                            </div>
-                           <input type="text" class="dateform marg-r" value="Дата"/>
                          </div>
                          <div class="diagram__toggle">
                            <div class="switch">
                                <input id="toggle-on4" class="toggle toggle-left" name="toggle4" value="false" type="radio" checked>
-                               <label for="toggle-on4" class="switch__btn">Структура</label>
+                               <label for="toggle-on4" class="switch__btn">Динамика</label>
                                <input id="toggle-off4" class="toggle toggle-right" name="toggle4" value="true" type="radio">
                                <label for="toggle-off4" class="switch__btn">Таблица</label>
                            </div>
                            <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
                          </div>
                        </div>
-                     <img src="/diagrams/diagram3.png" alt="diagram3">
+                       <div class="page__row">
+                         <form>
+                           <div class="tabs">
+                              <input id="tab_1" class="check" type="radio" name="tab" checked="checked" />
+                              <label for="tab_1" id="tab_l1">Виды расходов</label>
+                              <input id="tab_2" class="check" type="radio" name="tab" />
+                              <label for="tab_2" id="tab_l2">Отрасли</label>
+                           </div>
+                         </form>
+                       </div>
+                     <img src="/diagrams/diagram12.png" alt="diagram12">
                    </div>
 
                    <div class="shadow-block big-marg-t">
-                       <h3 class="page__title big-marg-t">График погашения государственного внутреннего долга на 01.06.2017</h3>
-                       <span class="date page__subtitle">Данные на 01.06.2017</span>
-                       <div class="page__row">
-                           <input type="text" class="dateform marg-r" value="Дата"/> <!-- Сюда прикрутить красивый календарь -->
-                           <div class="diagram__toggle">
-                               <div class="switch">
-                                   <input id="toggle-on6" class="toggle toggle-left" name="toggle6" value="false" type="radio" checked>
-                                   <label for="toggle-on6" class="switch__btn">Диаграмма</label>
-                                   <input id="toggle-off6" class="toggle toggle-right" name="toggle6" value="true" type="radio">
-                                   <label for="toggle-off6" class="switch__btn">Таблица</label>
-                               </div>
-                               <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
-                          </div>
-                      </div>
-                      <img src="/diagrams/diagram4.png" alt="diagram4">
+                     <h4 class="marg-t">Динамика расходов в разрезе ведомств на 01.06.2017</h4>
+                     <span class="date page__subtitle marg-t">Данные на 01.06.2017</span>
+                     <img src="/diagrams/diagram13.png" alt="diagram13">
                    </div>
 
-                   <div class="container marg-t">
-                       <div class="shadow-block">
-                           <div class="carousel3">
-                                <section class="regular_first slider flex flex-vertical">
-                                    <div class="blue-slide text-center" style="height: 185px; background-image:linear-gradient(rgba(67, 146, 192, 0.9), rgba(67, 146, 192, 0.7));">
-                                       <div class="carousel-inner flex flex-vertical">
-                                            <a href="#" class="picture-link upper">Виды и срочность долговых обязательств Волгоградской области</a>
-                                        </div>
-                                    </div>
-                                    <div class="blue-slide text-center flex flex-vertical" style="height: 185px; background-image:linear-gradient(rgba(67, 146, 192, 0.9), rgba(67, 146, 192, 0.7));">
-                                        <div class="carousel-inner flex flex-vertical">
-                                            <a href="#" class="picture-link upper">Расходы на обслуживание государственного долга Волгоградской области</a>
-                                        </div>
-                                    </div>
-                                    <div class="blue-slide text-center flex flex-vertical" style="height: 185px; background-image:linear-gradient(rgba(67, 146, 192, 0.9), rgba(67, 146, 192, 0.7));">
-                                        <div class="carousel-inner flex flex-vertical">
-                                            <a href="#" class="picture-link upper">Соблюдение требований бюджетного кодекса Российской федерации</a>
-                                        </div>
-                                    </div>
-                                    <div class="blue-slide text-center flex flex-vertical" style="height: 185px; background-image:linear-gradient(rgba(67, 146, 192, 0.9), rgba(67, 146, 192, 0.7));">
-                                        <div class="carousel-inner flex flex-vertical">
-                                            <a href="#" class="picture-link upper">Сведения об объеме долга на начало и конец года и о соблюдении ограничений, установленных законом о бюджете Волгоградской области</a>
-                                        </div>
-                                    </div>
-                                </section>
-    				              </div>
+                   <div class="shadow-block big-marg-t">
+                       <h4 class="page__title">Изменение расходов на выплату персонала на 01.06.2017</h4>
+                       <span class="date page__subtitle">Данные на 01.06.2017</span>
+                       <div class="page__row marg-b">
+                         <form>
+                           <div class="tabs">
+                              <input id="tab_3" class="check" type="radio" name="tab" checked="checked" />
+                              <label for="tab_3" id="tab_l3">Виды расходов</label>
+                              <input id="tab_4" class="check" type="radio" name="tab" />
+                              <label for="tab_4" id="tab_l4">Отрасли</label>
+                              <input id="tab_5" class="check" type="radio" name="tab" />
+                              <label for="tab_5" id="tab_l5">Ведомства</label>
+                           </div>
+                         </form>
+                         <div class="diagram__toggle">
+                           <div class="switch">
+                               <input id="toggle-on4" class="toggle toggle-left" name="toggle4" value="false" type="radio" checked>
+                               <label for="toggle-on4" class="switch__btn">Динамика</label>
+                               <input id="toggle-off4" class="toggle toggle-right" name="toggle4" value="true" type="radio">
+                               <label for="toggle-off4" class="switch__btn">Таблица</label>
+                           </div>
+                           <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
+                         </div>
                        </div>
+                       <div class="selector">
+                         <select name="finance-sources" id="finance-sources" size="1" class="selector-input">
+                           <option selected>Вид расхода</option>
+                         </select>
+                         <div class="selector-btn"></div>
+                      </div>
+                     <img src="/diagrams/diagram11.png" alt="diagram11">
                    </div>
 
                    <div class="shadow-block marg-t">
-                     <h3 class="page__title marg-t">Документы</h3>
+                     <h4 class="page__title marg-t">Документы</h4>
                      <div class="selector page-subtitle">
                        <select name="" id="" size="1" class="selector-input">
                          <option selected>Вид документа</option>
@@ -204,24 +221,20 @@
                       </select>
                       <div class="selector-btn"></div>
                    </div>
-                     <div class="page__docs flex flex-vertical marg-t">
+                    <div class="selector page-subtitle marg-l">
+                      <select name="" id="" size="1" class="selector-input">
+                        <option selected>Месяц</option>
+                      </select>
+                      <div class="selector-btn"></div>
+                   </div>
+                     <div class="page__docs flex flex-vertical marg-t big-marg-b">
                        <div class="icon-document">
-                         <img src="/images/d_xls.png" alt=".xls"/>
+                         <img src="/images/d_pdf.png" alt=".xls"/>
                        </div>
                        <div class="flex flex-column">
-                         <a href="#">Соблюдение требований бюджетного кодекса РФ</a>
+                         <a href="#">Отчет об исполнении областного бюджета (ф. 0503317)</a>
                          <span>Дата публикации: 01.06.2017 Дата актуализации: 01.06.2017</span>
-                         <span>Скачанно: 44 раза</span>
-                      </div>
-                     </div>
-                     <div class="page__docs flex flex-vertical marg-t">
-                       <div class="icon-document">
-                         <img src="/images/d_xls.png" alt=".xls"/>
-                       </div>
-                       <div class="flex flex-column">
-                         <a href="#">Сведения об объеме долга на начало и конец текущего года</a>
-                         <span>Дата публикации: 01.06.2017 Дата актуализации: 01.06.2017</span>
-                         <span>Скачанно: 44 раза</span>
+                         <span>Скачано: 500 раз</span>
                       </div>
                      </div>
                   </div>

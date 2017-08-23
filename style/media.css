@@ -47,4 +47,8 @@
     .flex-3-col {
         flex-basis: 50% !important;
     }
+    
+    .flex-4-col {
+        flex-basis: 33% !important;
+    }
 }

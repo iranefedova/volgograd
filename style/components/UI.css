@@ -7,6 +7,7 @@
   color: #323232;
 	border: 2px solid #dadfe6;
 	border-radius: 10px;
+    white-space: nowrap;
 }
 
 .switch__btn {
@@ -25,7 +26,7 @@
 
 .switch input[type="radio"].toggle + label {
   cursor: pointer;
-  min-width: 90px;
+  min-width: 60px;
 }
 
 .switch input[type="radio"].toggle + label:hover {
@@ -109,6 +110,7 @@
 	height: 36px;
 	background-color: #ffbe62;
 	border-radius: 10px;
+    flex-shrink: 0;
 }
 
 .btn-download img{
@@ -143,29 +145,33 @@
 
 /*---TABLE---*/
 
+.tableDiv {
+    border-left: 1px solid #a8b3c4;
+    border-right: 1px solid #a8b3c4;
+    max-height: 90vh;
+}
+
 .table {
     color: #323232;
     background: #ffffff;
-    border: 1px solid #a8b3c4;
     border-spacing: 0;
-    border-collapse: collapse;
     min-width: 100%;
 }
 
-<<<<<<< HEAD
 .small-table tbody {
     font-size: 13px !important;
     line-height: 16px;
 }
 
 .table__custom tr:hover{
->>>>>>> 1cf6182871df99bb15abcad6ee0c6a265bf57add
   background: #ebebeb;
 }
 
 .table__custom tr td:first-child{
     text-align: left;
     padding-left: 20px;
+    box-shadow:  inset -5px 0px 5px -2px rgba(214,220,228,1);
+    text-align: left;
 }
 
 .table th, td{
@@ -176,22 +182,31 @@
 .table th{
     color: #ffffff;
     background-color: #037cd3;
-    border-left: 1px solid #479fdf;
-    /*border-bottom: 1px solid #479fdf; //Нижняя граница заголовков*/
+    border-right: 1px solid #479fdf;
+    border-bottom: 1px solid #479fdf;
 }
 
-.table th:first-child {
-    border-left: 1px solid #a8b3c4;
+.table tr:first-child th:first-child {
+    text-align: center;
 }
+
 
 .table td{
-    border-left: 1px solid #a8b3c4;
+    border-right: 1px solid #a8b3c4;
     border-bottom: 1px solid #a8b3c4;
 }
 
-.table .cell-scrollable{
+.table td:last-child, .table tr:first-child th:last-child {
+    border-right: none;
+}
+
+
+.table .cell-scrollable {
     min-width: 280px;
-    box-shadow: inset 0 -1px #555960;
+}
+
+.table .cell-docs {
+    min-width: 220px;
 }
 
 .table .cell-year{
@@ -212,6 +227,15 @@
     color: #919599;
     font-size: 14px;
     margin-top: 5px;
+}
+
+.arrow-grey {
+    font-size: 26px;
+    color: #c3c3c3;
+}
+
+.arrow-grey ~ p {
+    margin: 0;
 }
 
 /*---ACCORDION---*/
@@ -467,6 +491,7 @@ ul.accordion-menu{
     padding: 0 0 0 6px;
 }
 
+<<<<<<< HEAD
 .dateform_img_display{
     display: none;
 
@@ -487,6 +512,8 @@ ul.accordion-menu{
     width: 45px;
 }
 
+=======
+>>>>>>> c21f063baf0e299adc174571a9a2dd3ac7ea2715
 ul.list-grey {
     list-style: none;
 }
