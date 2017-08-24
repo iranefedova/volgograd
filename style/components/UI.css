@@ -151,6 +151,10 @@
     max-height: 90vh;
 }
 
+.cellTextLeft td {
+    text-align: left;
+}
+
 .table {
     color: #323232;
     background: #ffffff;
