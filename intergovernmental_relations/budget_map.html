@@ -102,51 +102,207 @@
 
 
 
-                <div class="shadow-block flex flex-vertical flex-wrap map">
-                    <div class="info">
-                        <select name="region" id="region" size="1" class="select2 big-marg-b"></select>
-                        <div id="region_info" class="big-marg-b">
-                            <h3 class="rg_h3 flex flex-vertical big-marg-b"><img src="/images/gerb_reg.png" class="marg-r">Волгоградская область</h3>
-                            <div class="marg-t flex flex-vertical">
-                                <img src="/images/fortime.png" class="marg-r">
-                                <div>
-                                    <p class="p-header">Административный центр</p>
-                                    <p class="p-body">г. Волгоград</p>
-                                </div>
-                            </div>
-                            <div class="marg-t flex flex-vertical">
-                                <img src="/images/img2.png" class="marg-r">
-                                <div>
-                                    <p class="p-header">Численность населения</p>
-                                    <p class="p-body">2 535 202 чел.</p>
-                                </div>
-                            </div>
-                            <div class="marg-t flex flex-vertical">
-                                <img src="/images/img3.png" class="marg-r">
-                                <div>
-                                    <p class="p-header">Площадь территории</p>
-                                    <p class="p-body">112 877 кв.км.</p>
-                                </div>
+                <div class="shadow-block">
+
+                    <img src="budget_map1.png" alt="diagram1">
+
+                    <h3 class="page__title">Основные показатели Старополтавского района на 01.06.2017</h3>
+
+                    <img src="budget_map2.png" alt="diagram1">
+
+                    <div class="page__row">
+                        <div class="diagram__toggle">
+                            <input id="datepicker" type="text" class="dateform marg-r" value="Дата"/> <!-- Календарь -->
+                            <div class="dateform_img_display">
+                                <img id="calImg" src="../images/datepicker.png" alt="Popup" class="marg-r dateform_img"> <!--Иконка календаря-->
                             </div>
                         </div>
-                        <div>
-                            <a href="#" class="btn-yellow">Перейти в раздел</a>
+                        <div class="diagram__toggle">
+                            <div class="switch">
+                                <input id="toggle-on1" class="toggle toggle-left" name="toggle1" value="false" type="radio" checked>
+                                <label for="toggle-on1" class="switch__btn">Диаграмма</label>
+                                <input id="toggle-off1" class="toggle toggle-right" name="toggle1" value="true" type="radio">
+                                <label for="toggle-off1" class="switch__btn">Таблица</label>
+                            </div>
+                            <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
+                        </div>
+                    </div>
+                    <img src="budget_map3.png" alt="diagram1">
+                </div>
+                <div class="flex news-block">
+                    <div class="flex flex-wrap flex-2-col marg-t marg-r">
+                        <div class="shadow-block flex flex-column">
+                            <h3 class="page__title">Доходы Старополтавского района на 01.06.2017</h3>
+                            <span class="date page__subtitle">Данные на 01.06.2017</span>
+                            <div class="page__row">
+                                <div class="diagram__toggle flex-wrap">
+                                    <input id="datepicker2" type="text" class="dateform marg-r" value="Дата"/> <!-- Календарь -->
+                                    <div class="switch marg-r small-marg-t-adapt">
+                                        <input id="toggle-on2" class="toggle toggle-left" name="toggle2" value="false" type="radio" checked>
+                                        <label for="toggle-on2" class="switch__btn">План</label>
+                                        <input id="toggle-off2" class="toggle toggle-right" name="toggle2" value="true" type="radio">
+                                        <label for="toggle-off2" class="switch__btn">Факт.</label>
+                                    </div>
+
+                                </div>
+                                <div class="diagram__toggle">
+                                    <div class="switch">
+                                        <input id="toggle-on3" class="toggle toggle-left" name="toggle3" value="false" type="radio" checked>
+                                        <label for="toggle-on3" class="switch__btn">Диаграмма</label>
+                                        <input id="toggle-off3" class="toggle toggle-right" name="toggle3" value="true" type="radio">
+                                        <label for="toggle-off3" class="switch__btn">Таблица</label>
+                                    </div>
+                                    <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
+                                </div>
+
+                            </div>
+                            <img src="budget_map4.png" alt="diagram1">
                         </div>
                     </div>
 
-                    <div id="vmap" style="width: 420px; height: 420px;"></div>
+                    <div class="flex flex-wrap flex-2-col marg-t">
+                        <div class="shadow-block flex flex-column">
+                            <h3 class="page__title">Расходы Старополтавского района на 01.06.2017</h3>
+                            <span class="date page__subtitle">Данные на 01.06.2017</span>
 
-                    <div class="diagramms">
-                        <p class="text-right marg-b grey-text">Данные на 01.07.2017</p>
+                            <div class="page__row">
+                                <div class="diagram__toggle flex-wrap">
+                                    <input id="datepicker3" type="text" class="dateform marg-r" value="Дата"/> <!-- Календарь -->
+                                    <div class="switch marg-r small-marg-t-adapt">
+                                        <input id="toggle-on4" class="toggle toggle-left" name="toggle4" value="false" type="radio" checked>
+                                        <label for="toggle-on4" class="switch__btn">План</label>
+                                        <input id="toggle-off4" class="toggle toggle-right" name="toggle4" value="true" type="radio">
+                                        <label for="toggle-off4" class="switch__btn">Факт.</label>
+                                    </div>
+
+                                </div>
+                                <div class="diagram__toggle">
+                                    <div class="switch">
+                                        <input id="toggle-on5" class="toggle toggle-left" name="toggle5" value="false" type="radio" checked>
+                                        <label for="toggle-on5" class="switch__btn">Диаграмма</label>
+                                        <input id="toggle-off5" class="toggle toggle-right" name="toggle5" value="true" type="radio">
+                                        <label for="toggle-off5" class="switch__btn">Таблица</label>
+                                    </div>
+                                    <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
+                                </div>
+
+                            </div>
+                            <img src="budget_map5.png" alt="diagram1">
+                        </div>
                     </div>
-
-                    <h3 class="title">Основные показатели старополтавского района на 01.06.2017</h3>
                 </div>
 
+                <div class="shadow-block marg-t">
+                    <h3 class="page__title">Динамика доходов Старополтавского района на 01.06.2017</h3>
+                    <span class="date page__subtitle">Данные на 01.06.2017</span>
+                    <div class="page__row">
+                        <div class="diagram__toggle">
+                            <div class="tabs marg-r">
+                                <input id="tab_1" class="check" type="radio" name="tab" checked="checked" />
+                                <label for="tab_1" id="tab_l1">Доход</label>
+                                <input id="tab_2" class="check" type="radio" name="tab" />
+                                <label for="tab_2" id="tab_l2">Расход</label>
+                                <input id="tab_3" class="check" type="radio" name="tab" />
+                                <label for="tab_3" id="tab_l3">Дефицит/Профицит</label>
+                            </div>
+                        </div>
+                        <div class="diagram__toggle">
+                            <div class="switch">
+                                <input id="toggle-on6" class="toggle toggle-left" name="toggle6" value="false" type="radio" checked>
+                                <label for="toggle-on6" class="switch__btn">Диаграмма</label>
+                                <input id="toggle-off6" class="toggle toggle-right" name="toggle6" value="true" type="radio">
+                                <label for="toggle-off6" class="switch__btn">Таблица</label>
+                            </div>
+                            <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
+                        </div>
+                    </div>
+                    <div class="page__row marg-t">
+                        <div class="diagram__toggle">
+                            <input id="datepicker4" type="text" class="dateform marg-r" value="Дата"/> <!-- Календарь -->
+                            <div class="selector page-subtitle">
+                                <select name="department" id="department" size="1" class="selector-input">
+                                    <option selected>Отрасль</option>
+                                </select>
+                                <div class="selector-btn"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="budget_map6.png" alt="diagram1">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer big-marg-t">
+            <div class="container flex flex-between">
+                <div class="flex">
+                    <div class="marg-r">
+                        <a href="/" class="picture-link"><img src="/images/gerb.png" /></a>
+                    </div>
+                    <div class="address">
+                        <p>Комитет финансов Волгоградской области</p>
+                        <p>400066, Волгоград, ул. Порт-Саида, 7</p>
+                        <p>телефон: (8442) 30 91 06</p>
+                        <p>факс: (8442) 38 58 91</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="upper text-right">мы в социальных сетях</p>
+                    <div class="b_soc">
+                        <a href="#"><img src="/images/b_vk.png" /></a>
+                        <a href="#"><img src="/images/b_tw.png" /></a>
+                        <a href="#"><img src="/images/b_fb.png" /></a>
+                        <a href="#"><img src="/images/b_ok.png" /></a>
+                        <a href="#"><img src="/images/b_rss.png" /></a>
+                    </div>
+                    <div class="flex flex-between marg-t">
+                        <a href="#" class="picture-link"><img src="/images/sitemap.png" alt="Карта сайта"></a>
+                        <img src="/images/metrika.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
 
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://ruseller.com/lessons/les2479/demo/js/main.js"></script>
+    <script src="/libs/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
+    <script src="/js/datepicker/jquery.plugin.min.js" type="text/javascript"></script>
+    <script src="/js/datepicker/jquery.datepick.min.js" type="text/javascript"></script>
+    <script src="/js/datepicker/jquery.mousewheel.min.js" type="text/javascript"></script>
 
+    <script>
+        $("#datepicker,#datepicker2,#datepicker3,#datepicker4,#datepicker5").datepick({
+            dateFormat: 'dd.mm.yyyy',
+            showOnFocus: true,
+            showTrigger: '#calImg',
+        })
+    </script>
+
+
+    <script type="text/javascript">
+        // $( ".selector-btn" ).click(function() {
+        //   $( ".selector-input" ).slideUp();
+        // });
+    </script>
+
+    <script>
+        if ($(window).width() < '1771') {
+            $('.hidden-menu-ticker').change(function(){
+                if($('.hidden-menu-ticker').prop("checked")){
+                    $('.footer .container').css('margin-left', '320px');
+                }else{
+                    $('.footer .container').css('margin-left', 'auto');
+                }
+            });
+        }
+
+    </script>
+>
 </body>
 </html>

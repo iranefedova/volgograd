@@ -105,7 +105,7 @@
                     <div class="diagram__toggle">
                         <input id="datepicker" type="text" class="dateform marg-r" value="Дата"/> <!-- Календарь -->
                         <div class="dateform_img_display">
-                            <img id="calImg" src="../images/datepicker.png" alt="Popup" class="marg-r dateform_img">
+                            <img id="calImg" src="../images/datepicker.png" alt="Popup" class="marg-r dateform_img"> <!--Иконка календаря-->
                         </div>
                     </div>
                     <img src="img14.png" alt="diagram1">
@@ -116,10 +116,7 @@
                     <span class="date page__subtitle">Данные на 01.06.2017</span>
                     <div class="page__row">
                         <div class="diagram__toggle">
-                                <input id="datepicker2" type="text" class="dateform marg-r" value="Дата"/> <!-- Календарь -->
-                                <div class="dateform_img_display">
-                                    <img id="calImg2" src="../images/datepicker.png" alt="Popup" class="trigger datepick-trigger dateform_img">
-                                </div>
+                            <input id="datepicker2" type="text" class="dateform marg-r" value="Дата"/> <!-- Календарь -->
                             <div class="selector page-subtitle">
                                 <select name="finance-sources" id="transfers" size="1" class="selector-input">
                                     <option selected>Вид трансфера</option>
@@ -155,18 +152,15 @@
                     <h3 class="page__title">Структура и объем трансферов на 01.07.2017</h3>
                     <span class="date page__subtitle">Данные на 01.06.2017</span>
                     <div class="page__row">
-                        <div class="diagram__toggle">
+                        <div class="diagram__toggle flex-wrap">
                             <input id="datepicker3" type="text" class="dateform marg-r" value="Дата"/> <!-- Календарь -->
-                            <div class="dateform_img_display">
-                                <img id="calImg3" src="../images/datepicker.png" alt="Popup45678" class="datepick-trigger dateform_img">
-                            </div>
                             <div class="switch marg-r">
                                 <input id="toggle-on6" class="toggle toggle-left" name="toggle6" value="false" type="radio" checked>
                                 <label for="toggle-on6" class="switch__btn">Исполнено</label>
                                 <input id="toggle-off6" class="toggle toggle-right" name="toggle6" value="true" type="radio">
                                 <label for="toggle-off6" class="switch__btn">Назначено</label>
                             </div>
-                            <div class="page__row diagram__toggle">
+                            <div class="diagram__toggle small-marg-t-adapt-rev">
                                 <div class="tabs">
                                     <input id="tab_3" class="check" type="radio" name="tab2" checked="checked" />
                                     <label for="tab_3" id="tab_l3">По формам</label>
@@ -196,21 +190,12 @@
 
                 </div>
 
-                <!--<div class="flex flex-wrap marg-t ">
-                    <div class="shadow-block flex-3-col flex flex-vertical">
-                        <div class=" text-center marg-r">
-                            <img class="marg-r" src="/images/rus_flag.png">
+                <div class="flex flex-wrap">
+                    <div class="shadow-block shadow-block-small flex-3-col flex flex-vertical marg-t">
+                        <div class="circle-image circle-image-small text-center marg-r">
+                            <img src="/images/rus_flag.png">
                         </div>
-                        <p class="f16">Официальный сайт для размещения информации о государственных (муниципальных) учреждениях</p>
-                    </div>
-                </div>-->
-
-                <div class="flex flex-wrap marg-t">
-                    <div class="shadow-block flex flex-vertical flex-3-col flex-vertical">
-                        <a href="#" class="text-center circle-image circle-image-small marg-r picture-link">
-                            <img  src="/images/rus_flag.png" alt="">
-                        </a>
-                        <a class="f16" href="#">Официальный сайт для размещения информации о государственных (муниципальных) учреждениях</a></span>
+                        <p class="f16"><a href="#">Официальный сайт для размещения информации о государственных (муниципальных) учреждениях</a></p>
                     </div>
                 </div>
             </div>

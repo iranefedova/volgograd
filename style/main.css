@@ -324,6 +324,14 @@ a:active {
     margin-top: 10px;
 }
 
+.small-marg-t-adapt {
+    margin-top: 10px;
+}
+
+.small-marg-t-adapt-rev {
+    margin-top: 0;
+}
+
 .logo {
     padding-right: 15px;
     border-right: #c0c7d2 2px solid;
