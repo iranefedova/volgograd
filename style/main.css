@@ -188,7 +188,6 @@ a:active {
 
 .f16{
 	font-size: 16px;
-    color: #000;
 }
 
 .header {
@@ -235,6 +234,10 @@ a:active {
 
 .flex-around {
 	justify-content: space-around;
+}
+
+.flex-2-col{
+    flex-basis: 50%;
 }
 
 .flex-3-col {
