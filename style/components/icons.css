@@ -16,3 +16,45 @@
 .flex-3-col {
     flex-basis: 33%;
 }
+
+.plus {
+    background: #fff;
+    height: 10px; 
+    width: 2px;
+    position: relative; 
+    left: 40%;
+    top: 3px;
+    
+}
+
+.plus:after {
+    content: "";
+    height: 2px; width: 10px;
+    background: #fff;
+    position: absolute; 
+    left: -4px; 
+    top: 4px;
+}
+
+.square {
+    height: 17px;
+    width: 17px;
+    background-color: #3ca6f1;
+    flex-shrink: 0;
+    cursor: pointer;
+    margin-left: -40px;
+}
+
+.minus {
+    background: #fff;
+    height: 2px; 
+    width: 10px;
+    position: relative; 
+    left: 3px;
+    top: 45%;
+    
+}
+
+.sub-docs > .square  {
+    margin-left: -40px;
+}

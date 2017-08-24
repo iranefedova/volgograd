@@ -274,6 +274,10 @@ ul.accordion-menu{
 	display: block;
 }
 
+.submenu ul {
+    margin-left: 45px;
+}
+
 /*<ul class="accordion-menu">
  <li class="submenu">
    <input type="checkbox" name ="group-1" id="group-1" checked>
