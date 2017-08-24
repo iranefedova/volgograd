@@ -1,0 +1,58 @@
+ul.projects {
+    list-style: none;
+    margin-left: 0;
+}
+
+ul.projects p {
+    font-size: 18px;
+    flex-basis: 25%;
+}
+
+ul.projects li {
+    margin-top: 40px;
+}
+
+.bold {
+    font-family: 'Proxima Nova Bold';
+}
+
+ul.projects .progress-bar {
+    width: 40%;
+    border-radius: 0;
+    position: relative;
+}
+
+
+ul.projects .progress-bar__line {
+    padding: 10px;
+    padding-left: 15px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+ul.projects span {
+    position: absolute;
+    top: -25px;
+    white-space: nowrap;
+}
+
+.square {
+    width: 25px;
+    height: 25px;
+}
+
+.grey {
+    background-color: #dadfe6;
+}
+
+.blue {
+    background-color: #206db1;
+}
+
+.for-legend {
+    margin-left: 30%;
+}
+
+
