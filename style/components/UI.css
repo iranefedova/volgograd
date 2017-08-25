@@ -89,7 +89,7 @@
     max-width: max-content;
     transition: background 200ms ease, color 200ms ease;
 }
-
+.hidcont { display: none; }
 .tabs input[type="radio"].check {
   display: none;
 }
@@ -119,6 +119,21 @@
 
 .btn-download:hover{
 	background-color: #fec570;
+}
+
+/*---READ MORE BUTTON---*/
+
+.rear-more {
+    background: #ffbe62;
+    padding: 15px 70px;
+    color: #fff;
+    text-decoration: none !important;
+    margin-left: 65px;
+}
+
+.rear-more:hover {
+    background-color: #fec570;
+    color: #fff;
 }
 
 /*---PROGRESS BAR---*/

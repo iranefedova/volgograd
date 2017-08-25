@@ -188,7 +188,7 @@
                          <tbody>
                            <tr>
                              <td>
-                               <i class="fa fa-angle-right arrow-grey small-marg-r" aria-hidden="true"></i> Аккордеон 1
+                               <i onclick="func('1-1')" class="fa fa-angle-right arrow-grey small-marg-r" aria-hidden="true"></i> Аккордеон 1
                              </td>
                              <td>2014-2017</td>
                              <td>2 000 000</td>
@@ -205,8 +205,21 @@
                              <td>2 000 000</td>
                              <td>2 000 000</td>
                            </tr>
+                           <tr class="1-1 hidcont">
+                             <td style="padding-left: 40px;">Мероприятие 1</td>
+                             <td></td>
+                             <td>520 000</td>
+                             <td>
+                                 <div class="progress-bar">
+                                  <div class="progress-bar__line" style="width:100%">100%</div>
+                                 </div>
+                             </td>
+                             <td>10%</td>
+                             <td>520 000</td>
+                             <td>520 000</td>
+                           </tr>
                            <tr>
-                             <td><i class="fa fa-angle-right arrow-grey small-marg-r" aria-hidden="true"></i> ГП ВО "Защита населения и территории от чрезвычайных ситуаций, обеспечение пожарной безопасности</td>
+                             <td><i onclick="func('2-1')" class="fa fa-angle-right arrow-grey small-marg-r" aria-hidden="true"></i> ГП ВО "Защита населения и территории от чрезвычайных ситуаций, обеспечение пожарной безопасности</td>
                              <td>2014-2016</td>
                              <td>7 000 000</td>
                              <td>
@@ -222,8 +235,8 @@
                              <td>7 000 000</td>
                              <td>7 000 000</td>
                            </tr>
-                           <tr>
-                             <td style="padding-left: 40px;"><i class="fa fa-angle-right arrow-grey small-marg-r" aria-hidden="true"></i> Подпункт 1</td>
+                           <tr class="2-1 hidcont">
+                             <td style="padding-left: 40px;"><i onclick="func('2-1-1')" class="fa fa-angle-right arrow-grey small-marg-r" aria-hidden="true"></i> Подпункт 1</td>
                              <td></td>
                              <td>7 000 000</td>
                              <td>
@@ -239,7 +252,7 @@
                              <td>3 100 000</td>
                              <td>3 100 000</td>
                            </tr>
-                           <tr>
+                           <tr class="2-1-1 hidcont">
                              <td style="padding-left: 40px;">Мероприятие 1</td>
                              <td></td>
                              <td>520 000</td>
@@ -319,6 +332,26 @@
 
     </script>
     
+    <script>
+function func(id) {
+	var elems = document.getElementsByClassName(id);
+    var elems2 = document.getElementsByClassName(id + '-1');
+    var elems3 = document.getElementsByClassName(id + '-1-1');
+    
+	for (var i = 0; i < elems.length; i++) {
+        if (elems[i].style.display != "table-row") {
+            elems[i].style.display = "table-row"; //Показываем элемент
+
+            } else {
+                    elems[i].style.display = "none";
+                    elems2[i].style.display = "none";
+                elems3[i].style.display = "none";
+
+        }
+    }
+	}
+
+</script>
     <script src="../js/tableHeadFixer.js"></script>
     <script>
 			$(document).ready(function() {
