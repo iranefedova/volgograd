@@ -254,6 +254,10 @@ a:active {
     flex-basis: 33%;
 }
 
+.flex-3-col-links {
+    flex-basis: 29%;
+}
+
 .flex-4-col {
     flex-basis: 25%;
 }

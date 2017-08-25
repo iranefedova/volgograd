@@ -48,6 +48,18 @@
         flex-basis: 50% !important;
     }
     
+    .flex-3-col-links {
+        flex-basis: 44% !important;
+    }
+    
+    .shadow-block-small:nth-child(2n+2) {
+        margin-right: 0;
+    }
+    
+    .shadow-block-small:nth-child(3n+3) {
+        margin-right: 20px;
+    }
+    
     .flex-4-col {
         flex-basis: 33% !important;
     }
