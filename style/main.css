@@ -250,6 +250,15 @@ a:active {
 	justify-content: space-around;
 }
 
+.flex-noshrink{
+    flex-shrink: 0 !important;
+    flex-grow: 0 !important;
+}
+
+.flex-b33{
+    flex-basis: 33%;
+}
+
 .flex-2-col{
     flex-basis: 50%;
 }
@@ -260,6 +269,10 @@ a:active {
 
 .flex-4-col {
     flex-basis: 25%;
+}
+
+.flex-full {
+    flex: 1;
 }
 
 .picture-link {
@@ -542,4 +555,20 @@ a:active {
     display: inline-flex;
     align-items: center;
     align-self: flex-start;
+}
+
+.btn-yellow-noshw {
+    background-color: #f6bd68;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.btn-yellow-noshw:hover{
+    color: #ffffff; !important;
+}
+.input-300{
+    width: 300px;
 }
