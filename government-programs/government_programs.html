@@ -93,19 +93,19 @@
                    <link href="/style/components/UI.css" rel="stylesheet" />
 
                    <div class="shadow-block">
-                        <h3 class="page__title">Государственные программы Волгоградской области по % исполнения на 01.06.2017</h3>
+                        <h4 class="page__title">Государственные программы Волгоградской области по % исполнения на 01.06.2017</h4>
                         <span class="date page__subtitle">Данные на 01.06.2017</span>
                            <div class="page__row">
-                             <div class="diagram__toggle marg-r">
-                               <input type="text" class="dateform marg-r" value="Дата"/> <!-- Календарь -->
-                               <div class="selector page-subtitle">
+                             <div class="diagram__toggle marg-r flex-wrap">
+                               <input type="text" class="dateform marg-r small-marg-t" value="Дата"/> <!-- Календарь -->
+                               <div class="selector page-subtitle small-marg-t marg-r">
                                  <select name="finance-sources" id="finance-sources" size="1" class="selector-input">
                                    <option selected>Источник финансирования</option>
                                  </select>
                                  <div class="selector-btn"></div>
                               </div>
                             </div>
-                             <div class="diagram__toggle">
+                             <div class="diagram__toggle small-marg-t">
                                  <div class="switch">
                                      <input id="toggle-on1" class="toggle toggle-left" name="toggle1" value="false" type="radio" checked>
                                      <label for="toggle-on1" class="switch__btn">Диаграмма</label>
@@ -115,38 +115,46 @@
                                  <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
                             </div>
                            </div>
-                        <div class="switch marg-t">
-                            <input id="toggle-on2" class="toggle toggle-left" name="toggle2" value="false" type="radio" checked>
-                            <label for="toggle-on2" class="switch__btn">По % исполнения</label>
-                            <input id="toggle-off2" class="toggle toggle-right" name="toggle2" value="true" type="radio">
-                            <label for="toggle-off2" class="switch__btn">По объему финансирования</label>
-                        </div>
+                           <div class="page__row">
+                               <div class="switch small-marg-t">
+                                    <input id="toggle-on2" class="toggle toggle-left" name="toggle2" value="false" type="radio" checked>
+                                    <label for="toggle-on2" class="switch__btn">По % исполнения</label>
+                                    <input id="toggle-off2" class="toggle toggle-right" name="toggle2" value="true" type="radio">
+                                    <label for="toggle-off2" class="switch__btn">По объему финансирования</label>
+                                </div>
+                           </div>
 
                         <img class="marg-t" src="/diagrams/diagram1.png" alt="diagram1">
                    </div>
 
-                   <div class="shadow-block big-marg-t">
+                   <div class="shadow-block marg-t">
                        <h4 class="page__title">Параметры государственных программ Волгоградской области на 01.06.2017</h4>
                        <span class="page__subtitle">Сортировка</span>
-                       <div class="switch marg-b">
-                           <input id="toggle-on3" class="toggle toggle-left" name="toggle3" value="false" type="radio" checked>
-                           <label for="toggle-on3" class="switch__btn">Ведомства</label>
-                           <input id="toggle-off3" class="toggle toggle-right" name="toggle3" value="true" type="radio">
-                           <label for="toggle-off3" class="switch__btn">Мероприятия</label>
+                       <div class="page__row">
+                           <div class="diagram__toggle">
+                               <div class="switch marg-b">
+                                   <input id="toggle-on3" class="toggle toggle-left" name="toggle3" value="false" type="radio" checked>
+                                   <label for="toggle-on3" class="switch__btn">Ведомства</label>
+                                   <input id="toggle-off3" class="toggle toggle-right" name="toggle3" value="true" type="radio">
+                                   <label for="toggle-off3" class="switch__btn">Мероприятия</label>
+                               </div>
+                           </div>
+                           <div class="diagram__toggle">
+                               <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
+                           </div>
                        </div>
-                       <div class="page__row diagram__toggle">
-                       <div class="tabs">
-                          <input id="tab_1" class="check" type="radio" name="tab" checked="checked" />
-                          <label for="tab_1" id="tab_l1">Все</label>
-                          <input id="tab_2" class="check" type="radio" name="tab" />
-                          <label for="tab_2" id="tab_l2">По % исполнения</label>
-                          <input id="tab_3" class="check" type="radio" name="tab" />
-                          <label for="tab_3" id="tab_l3">Другие</label>
+                       <div class="page__row">
+                           <div class="tabs">
+                                  <input id="tab_1" class="check" type="radio" name="tab" checked="checked" />
+                                  <label for="tab_1" id="tab_l1">Все</label>
+                                  <input id="tab_2" class="check" type="radio" name="tab" />
+                                  <label for="tab_2" id="tab_l2">По % исполнения</label>
+                                  <input id="tab_3" class="check" type="radio" name="tab" />
+                                  <label for="tab_3" id="tab_l3">Другие</label>
+                               </div>
                        </div>
-                       <a class="picture-link btn-download marg-l" href="#"><img src="/images/download_arrow.png" alr="Загрузить"></a>
-                     </div>
-                     <div class="tableDiv">
-                       <table class="table table__custom marg-t">
+                     <div class="tableDiv marg-t">
+                       <table class="table table__custom" id="fixTable">
                          <thead>
                            <tr>
                              <th class="cell-scrollable" rowspan="2">
@@ -165,8 +173,14 @@
                                % исполнения к аналогичному периоду предыдущего года
                              </th>
                              <th class="cell-year" colspan="2">2015</th>
+                             <th class="cell-year" colspan="2">2016</th>
+                             <th class="cell-year" colspan="2">2017</th>
                            </tr>
                            <tr>
+                             <th>План</th>
+                             <th>Факт</th>
+                             <th>План</th>
+                             <th>Факт</th>
                              <th>План</th>
                              <th>Факт</th>
                            </tr>
@@ -184,6 +198,10 @@
                                  </div>
                              </td>
                              <td>20%</td>
+                             <td>2 000 000</td>
+                             <td>2 000 000</td>
+                             <td>2 000 000</td>
+                             <td>2 000 000</td>
                              <td>2 000 000</td>
                              <td>2 000 000</td>
                            </tr>
@@ -212,6 +230,10 @@
                              <td>10%</td>
                              <td>7 000 000</td>
                              <td>7 000 000</td>
+                             <td>7 000 000</td>
+                             <td>7 000 000</td>
+                             <td>7 000 000</td>
+                             <td>7 000 000</td>
                            </tr>
                            <tr class="2-1 hidcont">
                              <td style="padding-left: 40px;"><i onclick="func('2-1-1')" class="fa fa-angle-right arrow-grey small-marg-r" aria-hidden="true"></i> Подпункт 1</td>
@@ -225,6 +247,10 @@
                              <td>20%</td>
                              <td>7 000 000</td>
                              <td>3 100 000</td>
+                             <td>3 100 000</td>
+                             <td>3 100 000</td>
+                             <td>3 100 000</td>
+                             <td>3 100 000</td>
                            </tr>
                            <tr class="2-1-1 hidcont">
                              <td style="padding-left: 40px;">Мероприятие 1</td>
@@ -236,6 +262,10 @@
                                  </div>
                              </td>
                              <td>10%</td>
+                             <td>520 000</td>
+                             <td>520 000</td>
+                             <td>520 000</td>
+                             <td>520 000</td>
                              <td>520 000</td>
                              <td>520 000</td>
                            </tr>
@@ -322,6 +352,12 @@ function func(id) {
 	}
 
 </script>
+    <script src="../js/tableHeadFixer.js"></script>
+    <script>
+			$(document).ready(function() {
+				$("#fixTable").tableHeadFixer({"head" : true, "left" : 1}); 
+			});
+    </script>
 
 </body>
 
