@@ -1,0 +1,31 @@
+.grey-number {
+    color: #dbe0e7;
+    font-size: 60px;
+    font-family: 'Proxima Nova Bold';
+}
+
+.border-bottom {
+    padding-bottom: 8px;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.graphic ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.graphic ul li {
+    margin-top: 7px;
+    color: #786c5b;
+    width: 85%;
+    line-height: 16px;
+}
+
+.graphic > div {
+    margin-top: 40px;
+}
+
+.hidden {
+    display: none;
+}

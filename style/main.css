@@ -267,6 +267,10 @@ a:active {
     flex-basis: 33%;
 }
 
+.flex-3-col-links {
+    flex-basis: 29%;
+}
+
 .flex-4-col {
     flex-basis: 25%;
 }
@@ -569,6 +573,10 @@ a:active {
 .btn-yellow-noshw:hover{
     color: #ffffff; !important;
 }
-.input-300{
+.input-300 {
     width: 300px;
+}
+
+.sub-docs {
+    margin-left: 80px;
 }

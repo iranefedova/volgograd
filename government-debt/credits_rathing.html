@@ -100,8 +100,8 @@
                        <span class="f16">26 июня 2017 Аналитическое Кредитное Рейтинговое Агенство (АКРА) присвоило
                          Волгоградской облатсти кредитный рейтинг BBB-(RU), прогноз "Стабильный".</span>
                        <p class="marg-t"><h4>Наличие кредитных рейтингов у Волгоградской области</h4></p>
-                       <div class="tableDiv">
-                         <table class="table marg-t">
+                       <div class="tableDiv marg-t">
+                         <table class="table" id="fixTable">
                            <thead>
                              <tr>
                                <th>Долгосрочный рейтинг в иностранной валюте</th>
@@ -140,8 +140,8 @@
                        <p class="marg-t">Прогноз по кредитному рейтингу "Стабильный" - предполагает с наиболее высокой долей вероятности неизменность рейтинга.
                          Рейтинги могут быть дополнены знаком "+" или "-" для обозначения относительного положения в рамках основных рейтинговых категорий.
                        </p>
-                       <div class="tableDiv">
-                         <table class="table marg-t">
+                       <div class="tableDiv marg-t">
+                         <table class="table">
                            <thead>
                              <tr>
                                <th>Категория</th>
@@ -174,7 +174,7 @@
                          <div class="selector-btn"></div>
                       </div>
                       <div class="page__docs flex flex-vertical marg-t">
-                        <div class="icon-document">
+                        <div class="icon-document marg-r">
                           <img src="/images/d_pdf.png" alt=".xls"/>
                         </div>
                         <div class="flex flex-column">
@@ -185,20 +185,20 @@
                       </div>
                    </div>
 
-                   <div class="flex">
-                       <div class="shadow-block shadow-block-small flex-3-col flex flex-vertical marg-t">
+                   <div class="flex flex-wrap flex-between">
+                       <div class="shadow-block shadow-block-small flex-3-col-links flex flex-vertical marg-t">
                            <div class="circle-image circle-image-small text-center marg-r">
                              <img src="/images/carousel/dva4.png">
                            </div>
                            <p class="f16"><a href="#">Аналитическое кредитное рейтинговое агенство</a></p>
                        </div>
-                       <div class="shadow-block shadow-block-small flex-3-col flex flex-vertical marg-t">
+                       <div class="shadow-block shadow-block-small flex-3-col-links flex flex-vertical marg-t">
                            <div class="circle-image circle-image-small text-center marg-r">
                              <img src="/images/carousel/dva1.png">
                            </div>
                            <p class="f16"><a href="#">Ссылка 2</a></p>
                        </div>
-                       <div class="shadow-block shadow-block-small flex-3-col flex flex-vertical marg-t">
+                       <div class="shadow-block shadow-block-small flex-3-col-links flex flex-vertical marg-t">
                            <div class="circle-image circle-image-small text-center marg-r">
                              <img src="/images/carousel/dva2.png">
                            </div>
@@ -256,6 +256,13 @@
             });
         }
 
+    </script>
+    
+    <script src="../js/tableHeadFixer.js"></script>
+    <script>
+			$(document).ready(function() {
+				$("#fixTable").tableHeadFixer({"head" : true, "left" : 1}); 
+			});
     </script>
 
 </body>
