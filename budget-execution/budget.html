@@ -15,6 +15,7 @@
     <link href="/style/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="/js/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="/js/slick/slick-theme.css">
+    <link href="/js/datepicker/jquery.datepick.css" media="screen" rel="stylesheet" type="text/css" />
 
     <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>-->
 
@@ -93,16 +94,21 @@
                    <link href="/style/components/UI.css" rel="stylesheet" />
 
                    <div class="shadow-block">
-                       <div class="selector page-subtitle marg-r">
-                         <select name="finance-sources" id="finance-sources" size="1" class="selector-input">
-                           <option selected>Областной бюджет</option>
-                         </select>
-                         <div class="selector-btn"></div>
-                      </div>
-                      <input type="text" class="dateform" value="Дата"/>
-                       <h4 class="page__title marg-t">Основные характеристики исполнения областного бюджета на 01.06.2017</h4>
-                       <span class="date page__subtitle">Данные на 01.06.2017</span>
-                       <img src="/diagrams/diagram6.png" alt="diagram6">
+                       <div class="diagram__toggle">
+                           <div class="selector page-subtitle marg-r">
+                             <select name="finance-sources" id="finance-sources" size="1" class="selector-input">
+                               <option selected>Областной бюджет</option>
+                             </select>
+                             <div class="selector-btn"></div>
+                           </div>
+                           <input id="datepicker" type="text" class="dateform marg-r" value="Дата"/> <!-- Календарь -->
+                           <div class="dateform_img_display">
+                               <img id="calImg" src="../images/datepicker.png" alt="Popup" class="marg-r dateform_img"> <!--Иконка календаря-->
+                           </div>
+                       </div>
+                           <h4 class="page__title marg-t">Основные характеристики исполнения областного бюджета на 01.06.2017</h4>
+                           <span class="date page__subtitle">Данные на 01.06.2017</span>
+                           <img src="/diagrams/diagram6.png" alt="diagram6">
                    </div>
 
                    <div class="shadow-block marg-t">
@@ -125,8 +131,10 @@
                    <div class="shadow-block marg-t">
                        <h4 class="page__title">Источники финансирования дефицита бюджета на 01.06.2017</h4>
                        <span class="date page__subtitle">Данные на 01.06.2017</span>
-                       <div class="page__row">
-                           <input type="text" class="dateform marg-r" value="Дата"/> <!-- Сюда прикрутить красивый календарь -->
+                       <div class="page__row marg-t">
+                           <div class="diagram__toggle">
+                               <input id="datepicker2" type="text" class="dateform marg-r" value="Дата"/> <!-- Календарь -->
+                           </div>
                            <div class="diagram__toggle">
                                <div class="switch">
                                    <input id="toggle-on6" class="toggle toggle-left" name="toggle6" value="false" type="radio" checked>
@@ -210,6 +218,19 @@
     <script src="https://ruseller.com/lessons/les2479/demo/js/main.js"></script>
     <script src="/libs/jquery.touchSwipe.min.js"></script>
     <script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
+
+    <script src="/js/datepicker/jquery.plugin.min.js" type="text/javascript"></script>
+    <script src="/js/datepicker/jquery.datepick.min.js" type="text/javascript"></script>
+    <script src="/js/datepicker/jquery.mousewheel.min.js" type="text/javascript"></script>
+
+    <script>
+        $("#datepicker,#datepicker2").datepick({
+            dateFormat: 'dd.mm.yyyy',
+            showOnFocus: true,
+            showTrigger: '#calImg',
+        })
+    </script>
+
 
     <script src="/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">

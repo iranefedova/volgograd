@@ -97,7 +97,12 @@
                         <span class="date page__subtitle">Данные на 01.06.2017</span>
                            <div class="page__row">
                              <div class="diagram__toggle marg-r flex-wrap">
-                               <input type="text" class="dateform marg-r small-marg-t" value="Дата"/> <!-- Календарь -->
+                                 <div class="diagram__toggle small-marg-t">
+                                     <input id="datepicker" type="text" class="dateform marg-r" value="Дата"/> <!-- Календарь -->
+                                     <div class="dateform_img_display">
+                                         <img id="calImg" src="../images/datepicker.png" alt="Popup" class="marg-r dateform_img"> <!--Иконка календаря-->
+                                     </div>
+                                 </div>
                                <div class="selector page-subtitle small-marg-t marg-r">
                                  <select name="finance-sources" id="finance-sources" size="1" class="selector-input">
                                    <option selected>Источник финансирования</option>
@@ -312,6 +317,18 @@
     <script src="https://ruseller.com/lessons/les2479/demo/js/main.js"></script>
     <script src="/libs/jquery.touchSwipe.min.js"></script>
     <script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
+    <script src="/js/datepicker/jquery.plugin.min.js" type="text/javascript"></script>
+    <script src="/js/datepicker/jquery.datepick.min.js" type="text/javascript"></script>
+    <script src="/js/datepicker/jquery.mousewheel.min.js" type="text/javascript"></script>
+
+    <script>
+        $("#datepicker").datepick({
+            dateFormat: 'dd.mm.yyyy',
+            showOnFocus: true,
+            showTrigger: '#calImg',
+        })
+    </script>
+
 
     <script type="text/javascript">
       // $( ".selector-btn" ).click(function() {
