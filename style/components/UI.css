@@ -572,6 +572,10 @@ ul.accordion-menu{
 
 /*---DATE FORM---*/
 
+.relative {
+  position: relative;
+}
+
 .dateform{
     height: 32px;
     border: 2px solid #dadfe6;
@@ -594,6 +598,18 @@ ul.accordion-menu{
     cursor: pointer;
     width: 32px;
     height: 32px;
+}
+
+
+.relative .dateform_img {
+    cursor: pointer;
+    height: 33px;
+    margin-left: -54px;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 11px;
+    width: auto;
 }
 
 .icon-document{
