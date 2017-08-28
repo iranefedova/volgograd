@@ -21,7 +21,7 @@
         background-size: 30px 30px, cover;
         padding-left: 55px;
     }
-    
+
     .pz {
         display: flex;
         margin-top: 20px;
@@ -31,7 +31,15 @@
     .big-marg-b {
         margin-bottom: 20px;
     }
-    
+
+    .small-marg-t-adapt {
+        margin-top: 0;
+    }
+
+    .small-marg-t-adapt-rev {
+        margin-top: 10px;
+    }
+
     .news-block {
         flex-wrap: wrap;
     }
@@ -43,7 +51,12 @@
     .news-item:nth-child(2n) {
         margin-right: 0;
     }
-    
+
+    .flex-2-col {
+        flex-basis: 100% !important;
+        margin-right: 0 !important;
+    }
+
     .flex-3-col {
         flex-basis: 50% !important;
     }
@@ -68,3 +81,4 @@
         font-size: 16px !important;
     }
 }
+

@@ -193,6 +193,70 @@
     text-align: left;
 }
 
+.table.table__passport{
+    border-top: 1px solid #a8b3c4;
+}
+
+/*.table.table__passport tr{
+   background: expression(this.rowIndex % 2 == 0 ? "#ffe" : "#efe");
+} //ie-hack */
+
+.table.table__passport tr:nth-child(2n){
+   background-color: #f4f5f6;
+}
+
+.table__passport::after{
+    clear: both;
+}
+
+.table.table__passport p{
+    margin-left: 20px;
+}
+
+.table.table__passport ul, ol{
+    list-style-type: none;
+    counter-reset: item;
+    line-height: 1.5;
+}
+
+.table .table__miniature{
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    line-height: 108px;
+    background-color: #037cd3;
+    border-radius: 50%;
+}
+
+.table.table__passport ol li::before{
+    content: counter(item) '. ';
+    counter-increment: item;
+}
+
+.table.table__passport td{
+    text-align: left;
+    vertical-align: top;
+    border-bottom: none;
+}
+
+.table.table__passport th{
+    text-align: left;
+    vertical-align: top;
+    background-color: #ffffff;
+    color: #323232;
+    border-right: 1px solid #a8b3c4;
+    border-bottom: 1px solid #a8b3c4;
+}
+
+.table.table__passport tr:last-child td{
+    border-bottom: 1px solid #a8b3c4;
+}
+
+.table.table__passport span{
+    margin-left: 10px;
+}
+
 .table th, td{
     text-align: center;
     padding: 10px;
@@ -572,16 +636,48 @@ ul.accordion-menu{
 
 /*---DATE FORM---*/
 
+.relative {
+  position: relative;
+}
+
 .dateform{
     height: 32px;
     border: 2px solid #dadfe6;
     color: #323232;
-    padding: 0 38px 0 6px;
-    background-image: url(/images/datepicker.png);
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    max-width: 120px;
+    padding: 0 0 0 6px;
+}
+
+
+.dateform_img_display{
+    display: none;
+
+}
+
+.dateform_img{
+    opacity: 1;
+    margin-left: -54px;
+    /*right: 54px;*/
+    /*top: 12px;*/
+    position: relative;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+}
+
+
+.relative .dateform_img {
+    cursor: pointer;
+    height: 33px;
+    margin-left: -54px;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 11px;
+    width: auto;
+}
+
+.icon-document{
+    width: 45px;
 }
 
 ul.list-grey {
