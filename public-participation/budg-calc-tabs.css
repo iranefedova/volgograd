@@ -16,13 +16,13 @@
     -ms-flex-order: 1;
     order: 1;
     display: block;
-    padding: 1rem 2rem;
-    margin-right: 0.2rem;
+    padding: 15px 40px !important;
     cursor: pointer;
     background: #fff;
     font-weight: bold;
     -webkit-transition: background ease 0.2s;
     transition: background ease 0.2s;
+    border-bottom: none !important;
 }
 
 .tabs .tab {
@@ -45,7 +45,7 @@
     opacity: 0;
 }
 
-.tabs input[type="radio"]:checked + label { background: #eff1f2; }
+.tabs input[type="radio"]:checked + label { background: #eff1f2; border: none; }
 
 .tabs input[type="radio"]:checked + label + .tab { display: block; }
 @media (max-width: 45em) {

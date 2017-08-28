@@ -564,17 +564,17 @@ a:active {
 .btn-yellow-noshw {
     background-color: #f6bd68;
     color: #fff;
-    padding: 15px;
+    padding: 15px 80px;
     font-size: 18px;
     display: inline-block;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 .btn-yellow-noshw:hover{
     color: #ffffff; !important;
 }
 .input-300 {
     width: 300px;
+    border: 2px #dadfe6 solid;
+    padding: 4px;
 }
 
 .sub-docs {
