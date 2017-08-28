@@ -75,6 +75,7 @@ em {font-style: italic;}
 }
 [role="navigation"] ul {
     list-style: none;
+    margin-bottom: 20px;
 }
 [role="navigation"] li {
     margin: 0;
@@ -88,7 +89,7 @@ em {font-style: italic;}
     border: 1px solid #dadfe6;
     background: #ffffff;
     color: #222;
-    padding: 20px;
+    padding: 12px;
     text-align: left;
     text-decoration: none;
 }
@@ -187,6 +188,12 @@ a.nav-active {
     }
     [role="navigation"] li {
         padding: 0 0 0 0;
+    }
+}
+
+@media (max-width:1170px) and (min-width:900px) {
+    .flex-1 .news-item {
+        flex-basis: 90% !important;
     }
 }
 
