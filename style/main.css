@@ -324,6 +324,10 @@ a:active {
     margin-top: 10px;
 }
 
+.small-marg-b {
+    margin-bottom: 10px;
+}
+
 .logo {
     padding-right: 15px;
     border-right: #c0c7d2 2px solid;
