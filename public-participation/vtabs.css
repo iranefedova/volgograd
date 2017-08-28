@@ -57,6 +57,7 @@ em {font-style: italic;}
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
 }
+
 [role="main"],
 [role="navigation"],
 [role="complimentary"],
@@ -88,8 +89,12 @@ em {font-style: italic;}
     background: #ffffff;
     color: #222;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
+}
+
+[role="navigation"] a:hover {
+    color: #5282c3;
 }
 .site-title {
     text-align:center;
@@ -122,6 +127,7 @@ em {font-style: italic;}
 }
 a.nav-active {
     background: #009cff;
+    color: #fff !important;
 }
 @media (min-width:900px) {
     /*.page-title {
